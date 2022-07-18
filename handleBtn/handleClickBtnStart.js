@@ -12,8 +12,6 @@ const handleClickBtnStart = async function (
   root
 ) {
   const { newUser, errorMsg } = await saveUser(inputName, inputEmail);
-  console.log(newUser);
-  console.log(errorMsg);
 
   if (!newUser) {
     errorName.classList.remove("hidden");
@@ -21,7 +19,7 @@ const handleClickBtnStart = async function (
     errorName.textContent = errorMsg.name;
     errorEmail.textContent = errorMsg.email;
   } else if (newUser) {
-    localStorage.setItem("currentUser" , newUser)
+    localStorage.setItem("currentUser", JSON.stringify(newUser));
 
     const listTestPageEl = await listTestPage();
     render(listTestPageEl, root);

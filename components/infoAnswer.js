@@ -25,8 +25,10 @@ const infoAnswer = function (test, handleSubmit) {
 
   containerContentInfo.classList.add("px-8");
 
-  containerContentInfo.appendChild(infoTextRow("Name", "USER"));
-  containerContentInfo.appendChild(infoTextRow("Email", "EMAIL"));
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+  containerContentInfo.appendChild(infoTextRow("Name", currentUser.name));
+  containerContentInfo.appendChild(infoTextRow("Email", currentUser.email));
   containerContentInfo.appendChild(infoTextRow("Test name", test.name));
   containerContentInfo.appendChild(
     infoTextRow("Time", `${test.timeAnswerMinute} minutes`)
@@ -41,7 +43,12 @@ const infoAnswer = function (test, handleSubmit) {
   }
 
   const timeAnswerSecond = test.timeAnswerMinute * 60;
-  const idTimer = handleClock(renderClock, timeAnswerSecond, handleSubmit, test);
+  const idTimer = handleClock(
+    renderClock,
+    timeAnswerSecond,
+    handleSubmit,
+    test
+  );
 
   // containerContentInfo.appendChild(infoTextRow("Test name", "59:00", true));
 
@@ -51,8 +58,7 @@ const infoAnswer = function (test, handleSubmit) {
 
   infoAnswerEl.appendChild(infoAnswerButtonBack());
 
-
-  return {infoAnswerEl, idTimer};
+  return { infoAnswerEl, idTimer };
 };
 
 export default infoAnswer;
