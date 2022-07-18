@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-primary-color {
+    background: linear-gradient(110deg, #336ce1 30%, #76c2f8 100%);
+  }
+  .bg-success-color {
+    background: linear-gradient(110deg, #64e97a 30%, #2ee94d 100%) !important;
+  }
+  .bg-failure-color {
+    background: linear-gradient(110deg, #fb7280 30%, #ff3548 100%) !important;
+  }
+  .bg-primary-nav {
+    background: linear-gradient(110deg, #76c2f8 10%, #336ce1 100%);
+  }
+  .shadow-input-focus {
+    box-shadow: 0px 0px 5px 2px #2e9ce9;
+  }
+  .wrap-text {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
