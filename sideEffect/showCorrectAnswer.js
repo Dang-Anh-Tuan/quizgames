@@ -14,7 +14,6 @@ const showCorrectAnswer = function (containerQuestionEl, currentTest) {
 
     if (currentQuestion) {
       const idsCorrect = currentQuestion.correctAnswers.map((item) => item.id);
-      console.log(idsCorrect);
       labelAnswers.forEach((labelAnswer) => {
         if (
           idsCorrect.includes(

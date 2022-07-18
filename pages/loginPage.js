@@ -23,7 +23,7 @@ const loginPage = function () {
     >
       <div
         class="w-[380px] 
-               h-[500px] 
+               min-h-[500px] 
              bg-[rgba(0,0,0,0.7)] 
                rounded-[30px] 
              shadow-gray-800 
@@ -56,6 +56,16 @@ const loginPage = function () {
                  "
           placeholder="Enter your name ..."
         />
+        <p  id="error-name"
+            class="
+                text-red-500 
+                  mt-2
+                  mb-2
+                  text-[0.9rem] 
+                  ml-2
+                  " >
+         
+        </p>
         <p class="
         text-white 
           mb-2
@@ -78,6 +88,16 @@ const loginPage = function () {
                  focus:shadow-input-focus"
           placeholder="Enter your email ... "
         />
+        <p  id="error-email"
+            class="
+                text-red-500 
+                  mt-2
+                  mb-2
+                  text-[0.9rem] 
+                  ml-2
+                  " >
+         
+        </p>
         <div class="flex 
                     justify-center 
                     mt-[50px]">

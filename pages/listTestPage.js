@@ -9,16 +9,6 @@ const listTestPage = async function () {
   listTestPageEl.append(navBar());
   listTestPageEl.append(listTest(listTestData));
 
-  // const testItems = document.querySelectorAll(".test-item");
-  // console.log(testItems);
-  // for (const testItem of testItems) {
-  //   testItem.onclick = async function () {
-  //     console.log("call");
-  //     await handleTestItemClick(testItem.id, listTestPageEl, root);
-  //   };
-  // }
-
-
   return listTestPageEl;
 };
 

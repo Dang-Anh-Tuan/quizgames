@@ -14,11 +14,14 @@ const navBar = function () {
               xl:justify-between 
                "
       >
-        <div class="h-[50px]  
+        <div  id="logo"
+              class="h-[50px]  
                     items-center
                     hidden
                     xl:flex
+                    cursor-pointer
                     "
+                    
                     >
           <img src="./static/images/logo-squid.png" 
                alt="" 
