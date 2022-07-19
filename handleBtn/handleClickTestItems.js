@@ -1,6 +1,7 @@
 import { getTestById } from "../api/tests.api.js";
 import { render, unmount } from "../core/core.js";
 import infoTestPage from "../pages/infoTestPage.js";
+import handleBackTestInfoToListTest from "./handleBackTestInfoToListTest.js";
 import handleBtnStartTest from "./handleBtnStartTest.js";
 import handleClickCommentBtn from "./handleClickCommentBtn.js";
 import handleClickRankingBtn from "./handleClickRankingBtn.js";
@@ -38,6 +39,10 @@ async function handleTestItemClick(id, listTestPageEl, root) {
   btnStartTest.onclick = async function () {
     await handleBtnStartTest(currentTest, infoTestPageEl, root);
   };
+
+  btnBack.onclick = async function() {
+    await handleBackTestInfoToListTest(infoTestPageEl, root)
+  }
 
   await unmount(listTestPageEl, root);
 }
