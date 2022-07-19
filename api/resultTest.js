@@ -8,3 +8,16 @@ export const getTop3ByTest = async function (testId) {
 
   return result;
 };
+
+export const createResultTest = async function(resultTest){
+  const url = `${ENTRYPOINT}/result-test`;
+
+  const response = await fetch(url, {
+    headers: REQUEST_OPTION,
+    method: 'POST',
+    body : JSON.stringify(resultTest)
+  });
+  const result = await response.json();
+
+  return result;
+}

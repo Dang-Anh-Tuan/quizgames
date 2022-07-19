@@ -1,5 +1,7 @@
+import { createResultTest } from "../api/resultTest.js";
 import popUpScore from "../components/popUpScore.js";
 import checkCorrectAnswer from "../helper/checkCorrectAnswer.js";
+import getCurrentEmail from "../helper/getCurrentEmail.js";
 import disableAllInputAnswer from "../sideEffect/disableAllInputAnswer.js";
 import getAnswersSelected from "../sideEffect/getAnswersSelected.js";
 import showCorrectAnswer from "../sideEffect/showCorrectAnswer.js";
@@ -27,6 +29,16 @@ const handleSubmit = function (currentTest, idTimer) {
     answersSelected,
     currentTest.questions
   );
+
+  const currentEmail = getCurrentEmail();
+  const resultTest = {
+    test: currentTest.id,
+    email: currentEmail,
+    score: scoreUser,
+  };
+  createResultTest(resultTest)
+    .then((data) => console.log(data))
+    .catch((e) => console.log(e));
 
   showPopupScore(scoreUser, scoreOfTest);
 

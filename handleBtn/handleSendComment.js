@@ -1,8 +1,9 @@
 import { createComment } from "../api/comments.js";
 import testInfoComment from "../components/testInfoComment.js";
+import getCurrentEmail from "../helper/getCurrentEmail.js";
 
 const handleSendComment = async function (testId) {
-  const currentEmail = JSON.parse(localStorage.getItem("currentUser")).email;
+  const currentEmail = getCurrentEmail();
   const inputCommentEl = document.getElementById("test-info__input-comment");
   const commentConent = inputCommentEl.value;
 
