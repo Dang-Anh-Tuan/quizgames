@@ -11,16 +11,16 @@ const listQuestionPage = function (currentTest, handleSubmit) {
   containerQuestionPageEl.classList.add(
     "relative",
     "max-w-[1200px]",
-    "min-h-[100vh]",
+    "mt-6",
     "lg:flex",
     "m-auto",
-    "gap-3"
+    "gap-3",
+
   );
 
   const {infoAnswerEl , idTimer} = infoAnswer(currentTest, handleSubmit)
 
   containerQuestionPageEl.appendChild(listQuestion(currentTest.questions));
-  // containerQuestionPageEl.appendChild(infoAnswer(currentTest));
   containerQuestionPageEl.appendChild(infoAnswerEl);
 
 

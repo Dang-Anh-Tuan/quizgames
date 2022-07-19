@@ -22,12 +22,16 @@ const saveUser = async function (inputName, inputEmail) {
   if (!newEmail.match(regexEmail)) {
     errorMsg.email = "Email is not valid";
   } else {
-    // const emailsDB = users ? users.map((user) => user.email) : null;
-    // if (emailsDB && emailsDB.some((item) => newEmail === item)) {
-    //   errorMsg.email = "Email is exist";
-    // } else {
+    let checkExist = false;
+    users.forEach((user) => {
+      if (user.email === newEmail) {
+        newUser = user;
+        checkExist = true;
+      }
+    });
+    if (!checkExist) {
       newUser = await createUser({ name: newName, email: newEmail });
-    // }
+    }
   }
 
   return { newUser, errorMsg };

@@ -1,29 +1,42 @@
 import { getTestById } from "../api/tests.api.js";
 import { render, unmount } from "../core/core.js";
-import listQuestionPage from "../pages/listQuestionPage.js";
-import disabledBtn from "../sideEffect/disabledBtn.js";
-import handleBackListQuestionToListTest from "./handleBackListQuestionToListTest.js";
-import handleSubmit from "./handleSubmit.js";
+import infoTestPage from "../pages/infoTestPage.js";
+import handleBtnStartTest from "./handleBtnStartTest.js";
+import handleClickCommentBtn from "./handleClickCommentBtn.js";
+import handleClickRankingBtn from "./handleClickRankingBtn.js";
+import handleSendComment from "./handleSendComment.js";
 
 async function handleTestItemClick(id, listTestPageEl, root) {
   const currentTest = await getTestById(id);
-  const { listQuestionPageEl, idTimer } = listQuestionPage(
-    currentTest,
-    handleSubmit
-  );
 
-  render(listQuestionPageEl, root);
+  const infoTestPageEl = await infoTestPage(currentTest);
 
+  render(infoTestPageEl, root);
 
-  const btnSubmit = document.getElementById("btn-submit-test");
-  btnSubmit.onclick = function () {
-    handleSubmit(currentTest, idTimer);
-    disabledBtn(this);
+  const btnComment = document.getElementById("info-test__btn-comment");
+  const btnRanking = document.getElementById("info-test__btn-ranking");
+  const btnSendComment = document.getElementById("test-info__btn-send_comment");
+  const blockComment = document.getElementById("container-comments");
+  const blockRanking = document.getElementById("container-ranking");
+  const makerActive = document.getElementById("test-info__after-maker");
+
+  btnSendComment.onclick = async function () {
+    await handleSendComment(id);
   };
 
+  btnComment.onclick = function () {
+    handleClickCommentBtn(blockComment, blockRanking, makerActive);
+  };
+
+  btnRanking.onclick = function () {
+    handleClickRankingBtn(blockComment, blockRanking, makerActive);
+  };
+
+  const btnStartTest = document.getElementById("test-info__btn-start");
   const btnBack = document.getElementById("info-test__btn-back");
-  btnBack.onclick = async function () {
-    await handleBackListQuestionToListTest(listQuestionPageEl, root, idTimer);
+
+  btnStartTest.onclick = async function () {
+    await handleBtnStartTest(currentTest, infoTestPageEl, root);
   };
 
   await unmount(listTestPageEl, root);
