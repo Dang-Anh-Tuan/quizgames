@@ -1,37 +1,39 @@
-const testInfoContent = function (currentTest) {
-  const testInfoContentEl = document.createElement("div");
+const popUpQuitTest = function (scoreUser, scoreOfTest) {
+  const popUpQuitTestEl = document.createElement("div");
 
-  testInfoContentEl.classList.add(
-    "lg:w-[66%]",
-    "py-[36px]",
-    "px-8",
-    "bg-white",
-    "bg-opacity-90",
-    "shadow-2xl",
-    "rounded-[25px]",
-    "lg:mr-4",
-    "mt-[38px]",
-    "mr-3",
-    "ml-3"
-  );
-
-  testInfoContentEl.innerHTML = `
-  <h3 class="text-center
-                   text-[2rem] 
-                   leading-[2.2rem] 
-                   font-semibold 
-                   text-primary">
-                   ${currentTest.name}</h3>
-        <p class="mt-[50px] text-[1.2rem] leading-[2rem]">${currentTest.shortDescription}</p>
-
-        <div class="flex
-                    w-full
-                    lg:w-[80%]
-                    justify-around
-                    m-auto
-                    mt-[50px]
-                    "   >
-          <button   id="test-info__btn-start"
+  popUpQuitTestEl.innerHTML = `
+   <div class="h-[100vh]
+                w-full
+                fixed
+                bg-[rgba(0,0,0,0.3)]
+                top-0
+                left-0
+                z-[1000]">
+      <div class="absolute
+                  flex
+                  flex-col
+                  justify-center
+                  items-center
+                  z-[1001]
+                  w-[450px]
+                  min-h-[200px]
+                  bg-white
+                  top-[45%]
+                  left-[50%]
+                  translate-x-[-50%]
+                  translate-y-[-50%]
+                  rounded-[25px]
+                  px-6
+                  py-10" >
+          <div class="text-center">
+            <p class="text-[1.2rem] 
+                      leading[1.4rem] 
+                      font-medium 
+                      text-primary
+                      select-none">Do you want to quit ?</p>
+          </div>
+          <div class="flex w-full justify-between mt-6">
+            <button id="popup-result__back-list-test"
                     class="outline-none
                             relative
                             text-center 
@@ -59,8 +61,8 @@ const testInfoContent = function (currentTest) {
                             after:origin-center
                             after:opacity-0
                             hover:after:scale-x-100
-                            hover:after:opacity-100"  >Start</button>
-            <button id="info-test__btn-back"
+                            hover:after:opacity-100"  >Back to list test</button>
+            <button id="popup-result__btn-close"
                     class="outline-none
                           relative
                           text-center 
@@ -80,10 +82,13 @@ const testInfoContent = function (currentTest) {
                           transition-all
                           duration-300
                           ease-in-out" 
-                      >Back</button>
+                      >Close</button>
+          </div>
+      </div>
+    </div>
   `;
 
-  return testInfoContentEl;
+  return popUpQuitTestEl;
 };
 
-export default testInfoContent;
+export default popUpQuitTest;

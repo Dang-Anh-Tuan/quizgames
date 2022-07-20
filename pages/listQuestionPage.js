@@ -12,21 +12,21 @@ const listQuestionPage = function (currentTest, handleSubmit) {
     "relative",
     "max-w-[1200px]",
     "mt-6",
-    "lg:flex",
+    "flex",
+    "flex-col-reverse",
+    "lg:flex-row",
     "m-auto",
-    "gap-3",
-
+    "gap-3"
   );
 
-  const {infoAnswerEl , idTimer} = infoAnswer(currentTest, handleSubmit)
+  const { infoAnswerEl, idTimer } = infoAnswer(currentTest, handleSubmit);
 
   containerQuestionPageEl.appendChild(listQuestion(currentTest.questions));
   containerQuestionPageEl.appendChild(infoAnswerEl);
 
-
   listQuestionPageEl.appendChild(containerQuestionPageEl);
 
-  return {listQuestionPageEl, idTimer};
+  return { listQuestionPageEl, idTimer };
 };
 
 export default listQuestionPage;

@@ -14,7 +14,9 @@ const testInfoSideBar = async function (currentTest) {
     "mt-9",
     "right-0",
     "pb-[50px]",
-    "min-h-[280px]"
+    "min-h-[280px]",
+    "mr-3",
+    "ml-3"
   );
 
   testInfoSideBarEl.innerHTML = `

@@ -8,7 +8,8 @@ const infoAnswer = function (test, handleSubmit) {
   const infoAnswerEl = document.createElement("div");
 
   infoAnswerEl.classList.add(
-    "sticky",
+    "relative",
+    "lg:sticky",
     "shadow-2xl",
     "rounded-[25px]",
     "h-fit",
@@ -16,7 +17,10 @@ const infoAnswer = function (test, handleSubmit) {
     "top-[36px]",
     "right-0",
     "pb-[50px]",
-    "mt-9"
+    "lg:mt-9",
+    "mb-[50px]",
+    "mr-3",
+    "ml-3"
   );
 
   infoAnswerEl.appendChild(infoAnswerHeading());

@@ -24,7 +24,9 @@
     <div class="relative
                 max-w-[1200px]
                 min-h-[100vh]
-                lg:flex
+                flex
+                flex-col-reverse
+                lg:flex-row
                 m-auto
                 gap-3
                 ">
@@ -37,7 +39,6 @@
                   min-h-[100vh]
                   shadow-2xl
                   rounded-[25px]
-                  mr-4
                   ">
         <div class="mb-8">
           <div class="px-6
@@ -274,16 +275,19 @@
         </div>
       </div>
 
-      <div class="
-                  sticky   
+      <div class="relative
+                  lg:sticky   
                   shadow-2xl
                   rounded-[25px] 
                   h-fit
                   lg:w-[32%] 
                   top-[36px]
-                  mt-9
+                  lg:mt-9
                   right-0
                   pb-[50px]
+                  mb-[50px]
+                  mr-3
+                  ml-3
                  ">
         <div class="flex
                     justify-center
@@ -403,7 +407,8 @@
                 bg-[rgba(0,0,0,0.3)]
                 top-0
                 left-0
-                z-[1000]">
+                z-[1000]
+                hidden">
       <div class="absolute
                   flex
                   flex-col
