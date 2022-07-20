@@ -1,26 +1,14 @@
 import { createUser, getAllUser } from "../api/user.api.js";
 
-const saveUser = async function (inputName, inputEmail) {
+const saveUser = async function (newName, newEmail) {
   const users = await getAllUser();
   let newUser = null;
-
-  const newName = inputName.value;
-  const newEmail = inputEmail.value;
 
   const regexName = /^[A-Za-z]+$/g;
   const regexEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
-  const errorMsg = {
-    name: null,
-    email: null,
-  };
-
-  if (!newName.match(regexName)) {
-    errorMsg.name = "Name must include character a-z";
-  }
-
-  if (!newEmail.match(regexEmail)) {
-    errorMsg.email = "Email is not valid";
+  if (!newName.match(regexName) || !newEmail.match(regexEmail)) {
+    return newUser
   } else {
     let checkExist = false;
     users.forEach((user) => {
@@ -34,7 +22,7 @@ const saveUser = async function (inputName, inputEmail) {
     }
   }
 
-  return { newUser, errorMsg };
+  return newUser;
 };
 
 export default saveUser;

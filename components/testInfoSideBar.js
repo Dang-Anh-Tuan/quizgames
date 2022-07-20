@@ -13,7 +13,7 @@ const testInfoSideBar = async function (currentTest) {
     "top-[36px]",
     "mt-9",
     "right-0",
-    "pb-[50px]",
+    "pb-[24px]",
     "min-h-[280px]",
     "mr-3",
     "ml-3"

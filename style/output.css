@@ -799,6 +799,14 @@ video {
   height: 200px;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
+.max-h-\[400px\] {
+  max-height: 400px;
+}
+
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
@@ -813,6 +821,14 @@ video {
 
 .min-h-\[500px\] {
   min-height: 500px;
+}
+
+.min-h-\[300px\] {
+  min-height: 300px;
+}
+
+.min-h-\[100px\] {
+  min-height: 100px;
 }
 
 .w-full {
@@ -948,6 +964,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .truncate {
@@ -1124,6 +1144,10 @@ video {
 
 .pb-\[50px\] {
   padding-bottom: 50px;
+}
+
+.pb-\[24px\] {
+  padding-bottom: 24px;
 }
 
 .text-center {

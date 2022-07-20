@@ -43,12 +43,19 @@ const testInfoComments = async function (testId) {
             duration-300
             ease-in-out
             noSelect">Send</button>
+            
           </div>
   `;
 
+  const containerCommentsEl = document.createElement("div");
+  containerCommentsEl.classList.add("max-h-[400px]", "overflow-y-auto");
+  containerCommentsEl.setAttribute('id', "test-info__container-comment")
+
   comments.forEach((comment) =>
-    testInfoCommentsEl.appendChild(testInfoComment(comment))
+    containerCommentsEl.appendChild(testInfoComment(comment))
   );
+
+  testInfoCommentsEl.appendChild(containerCommentsEl);
 
   return testInfoCommentsEl;
 };

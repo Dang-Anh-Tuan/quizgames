@@ -6,19 +6,12 @@ import handleClickTestItems from "./handleClickTestItems.js";
 const handleClickBtnStart = async function (
   inputName,
   inputEmail,
-  errorName,
-  errorEmail,
   loginPageEL,
   root
 ) {
-  const { newUser, errorMsg } = await saveUser(inputName, inputEmail);
+  const newUser = await saveUser(inputName, inputEmail);
 
-  if (!newUser) {
-    errorName.classList.remove("hidden");
-    errorEmail.classList.remove("hidden");
-    errorName.textContent = errorMsg.name;
-    errorEmail.textContent = errorMsg.email;
-  } else if (newUser) {
+  if (newUser) {
     localStorage.setItem("currentUser", JSON.stringify(newUser));
 
     const listTestPageEl = await listTestPage();

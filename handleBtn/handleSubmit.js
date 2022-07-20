@@ -3,6 +3,7 @@ import popUpScore from "../components/popUpScore.js";
 import checkCorrectAnswer from "../helper/checkCorrectAnswer.js";
 import getCurrentEmail from "../helper/getCurrentEmail.js";
 import disableAllInputAnswer from "../sideEffect/disableAllInputAnswer.js";
+import disabledBtn from "../sideEffect/disabledBtn.js";
 import getAnswersSelected from "../sideEffect/getAnswersSelected.js";
 import showCorrectAnswer from "../sideEffect/showCorrectAnswer.js";
 import setHandleBtnPopupScore from "./setHandleBtnPopupScore.js";
@@ -41,6 +42,7 @@ const handleSubmit = function (currentTest, idTimer) {
     .catch((e) => console.log(e));
 
   showPopupScore(scoreUser, scoreOfTest);
+  disabledBtn(document.getElementById("btn-submit-test"))
 
   showCorrectAnswer(containerQuestionEl, currentTest);
 };

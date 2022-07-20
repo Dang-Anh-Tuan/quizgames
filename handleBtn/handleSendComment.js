@@ -17,7 +17,7 @@ const handleSendComment = async function (testId) {
 
   inputCommentEl.value = ''
 
-  const commentBlockEl = document.getElementById("container-comments");
+  const commentBlockEl = document.getElementById("test-info__container-comment");
   commentBlockEl.appendChild(testInfoComment(commentResponse));
 };
 
