@@ -22,7 +22,53 @@ const testInfoContent = function (currentTest) {
                    font-semibold 
                    text-primary">
                    ${currentTest.name}</h3>
-        <p class="mt-[50px] text-[1.2rem] leading-[2rem]">${currentTest.shortDescription}</p>
+        <div class="mt-[50px]">
+        <div class="flex 
+                      items-center 
+                      font-semibold 
+                      text-[1.2rem]
+                      mb-4">
+            <div class="flex 
+                        justify-start 
+                        w-[40px] 
+                        text-primary">
+              <i class="fa-regular fa-circle-question"></i>
+            </div>
+            <p>Question : </p>
+            <p class="ml-4 font-normal">${currentTest.questions.length}</p>
+          </div>
+
+           <div class="flex 
+                      items-center 
+                      font-semibold 
+                      text-[1.2rem]
+                      mb-4">
+            <div class="flex 
+                        justify-start 
+                        w-[40px] 
+                        text-primary">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+            <p>Time : </p>
+            <p class="ml-4 font-normal">${currentTest.timeAnswerMinute} minutes</p>
+          </div>
+
+           <div class="flex 
+                      items-center 
+                      font-semibold 
+                      text-[1.2rem]
+                      mb-4">
+            <div class="flex 
+                        justify-start 
+                        w-[40px] 
+                        text-primary">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+            <p>Require score : </p>
+            <p class="ml-4 font-normal">${currentTest.scorePass}</p>
+          </div>
+          <p class="text-[1.2rem] leading-[2rem] text-gray-500 font-light">${currentTest.shortDescription}</p>
+        </div>
 
         <div class="flex
                     w-full

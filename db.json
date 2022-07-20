@@ -6,6 +6,7 @@
       "name": "HTML Basic Part 1",
       "shortDescription": "The Test The test contains 40 questions and there is no time limit. \n The test is not official, it's just a nice way to see how much you know, or don't know, about HTML. \nCount Your Score You will get 1 point for each correct answer.\n At the end of the Quiz, your total score will be displayed. Maximum score is 40 points",
       "timeAnswerMinute": 0.2,
+      "scorePass" : 40,
       "questions": [
         {
           "id": 1,
@@ -244,6 +245,8 @@
       "thumb": "https://images.unsplash.com/photo-1610360655260-decd32e267aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "name": "HTML Basic Part 2",
       "timeAnswerMinute": 5,
+      "scorePass" : 30,
+
       "shortDescription": "HTML is the standard markup language for creating Web pages.\nWhat is HTML?\nHTML stands for Hyper Text Markup Language\nHTML is the standard markup language for creating Web pages\nHTML describes the structure of a Web page\nHTML consists of a series of elements\nHTML elements tell the browser how to display the content\nHTML elements label pieces of content such as 'this is a heading', 'this is a paragraph', 'this is a link', etc.",
       "questions": [
         {
@@ -488,6 +491,8 @@
       "name": "HTML Basic Part 3",
       "shortDescription": "Our absolute beginner tutorial will turn you from wannabe to webmaster in just a few hours. Unlike many other HTML tutorials, it’s a step-by-step guide – not a boring long-winded referenOur step-by-step guide teaches you the basics of HTML and how to build your first website. That means how to layout an HTML page, how to add text and images, how to add headings and text formatting, and how to use tables.We’ll get you building your new website in minutes, not hours.",
       "timeAnswerMinute": 3,
+      "scorePass" : 20,
+
       "questions": [
         {
           "id": 21,
@@ -698,6 +703,7 @@
       "thumb": "https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
       "name": "HTML Basic Part 4",
       "timeAnswerMinute": 10,
+      "scorePass" : 10,
       "shortDescription": "The Test The test contains 40 questions and there is no time limit. \n The test is not official, it's just a nice way to see how much you know, or don't know, about HTML. \nCount Your Score You will get 1 point for each correct answer.\n At the end of the Quiz, your total score will be displayed. Maximum score is 40 points",
       "questions": [
         {
@@ -963,6 +969,7 @@
       "name": "CSS Basic",
       "shortDescription": "CSS stands for Cascading Style Sheets\nCSS describes how HTML elements are to be displayed on screen, paper, or in other media\nCSS saves a lot of work. It can control the layout of multiple web pages all at once\nExternal stylesheets are stored in CSS files",
       "timeAnswerMinute": 10,
+      "scorePass" : 5,
       "questions": [
         {
           "id": 43,
