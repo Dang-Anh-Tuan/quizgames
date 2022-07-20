@@ -1,5 +1,20 @@
-const popUpScore = function (scoreUser, scoreOfTest) {
+const popUpScore = function (scoreUser, scoreOfTest, scorePass) {
   const popUpScoreEl = document.createElement("div");
+
+  const imgSrc =
+    scoreUser > scorePass
+      ? "/static/images/cup.png"
+      : "/static/images/failure.png";
+
+  let message = ""
+
+  if(scoreUser === scoreOfTest){
+    message = "Excellent"
+  }else if (scoreUser >= scorePass ){
+    message = "Nice try ! Let's practice more "
+  } else {
+    message = "Let try again"
+  }
 
   popUpScoreEl.innerHTML = `
    <div class="h-[100vh]
@@ -25,7 +40,7 @@ const popUpScore = function (scoreUser, scoreOfTest) {
                   rounded-[25px]
                   px-6
                   py-10" >
-          <img src="/static/images/cup.png" 
+          <img src="${imgSrc}" 
                alt="" 
                class="w-[100px]
                       ">
@@ -34,7 +49,7 @@ const popUpScore = function (scoreUser, scoreOfTest) {
                       leading[1.4rem] 
                       font-medium 
                       text-primary 
-                      select-none">Congratulations </p>
+                      select-none">${message} </p>
             <p class="text-[1.2rem] 
                       leading[1.4rem] 
                       font-medium 

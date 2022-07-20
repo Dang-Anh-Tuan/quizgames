@@ -8,8 +8,8 @@ import getAnswersSelected from "../sideEffect/getAnswersSelected.js";
 import showCorrectAnswer from "../sideEffect/showCorrectAnswer.js";
 import setHandleBtnPopupScore from "./setHandleBtnPopupScore.js";
 
-async function showPopupScore(scoreUser, scoreOfTest) {
-  const popUpScoreEl = popUpScore(scoreUser, scoreOfTest);
+async function showPopupScore(scoreUser, scoreOfTest, scorePass) {
+  const popUpScoreEl = popUpScore(scoreUser, scoreOfTest, scorePass);
   document.getElementById("container").appendChild(popUpScoreEl);
 
   await setHandleBtnPopupScore(popUpScoreEl);
@@ -41,7 +41,7 @@ const handleSubmit = function (currentTest, idTimer) {
     .then((data) => console.log(data))
     .catch((e) => console.log(e));
 
-  showPopupScore(scoreUser, scoreOfTest);
+  showPopupScore(scoreUser, scoreOfTest, currentTest.scorePass);
   disabledBtn(document.getElementById("btn-submit-test"))
 
   showCorrectAnswer(containerQuestionEl, currentTest);
