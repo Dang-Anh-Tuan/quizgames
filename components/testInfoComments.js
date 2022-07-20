@@ -41,7 +41,8 @@ const testInfoComments = async function (testId) {
             hover:text-white
             transition-all
             duration-300
-            ease-in-out">Send</button>
+            ease-in-out
+            noSelect">Send</button>
           </div>
   `;
 

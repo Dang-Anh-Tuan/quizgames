@@ -38,7 +38,8 @@ const infoAnswerButtonSubmit = function () {
                       after:origin-center
                       after:opacity-0
                       hover:after:scale-x-100
-                      hover:after:opacity-100" 
+                      hover:after:opacity-100
+                      noSelect" 
                       >Submit</button>
   `;
 

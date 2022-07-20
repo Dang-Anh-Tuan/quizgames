@@ -53,7 +53,8 @@ const navBar = function () {
                          ml-2
                          rounded-full
                          bg-white
-                         group">
+                         group
+                         noSelect">
             <i class="fa-solid fa-magnifying-glass
                       group-hover:text-primary"></i>
           </button>

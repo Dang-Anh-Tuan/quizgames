@@ -59,7 +59,8 @@ const testInfoContent = function (currentTest) {
                             after:origin-center
                             after:opacity-0
                             hover:after:scale-x-100
-                            hover:after:opacity-100"  >Start</button>
+                            hover:after:opacity-100
+                            noSelect"  >Start</button>
             <button id="info-test__btn-back"
                     class="outline-none
                           relative
@@ -79,7 +80,8 @@ const testInfoContent = function (currentTest) {
                           hover:text-white
                           transition-all
                           duration-300
-                          ease-in-out" 
+                          ease-in-out
+                          noSelect" 
                       >Back</button>
   `;
 

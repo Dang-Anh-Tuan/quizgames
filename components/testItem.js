@@ -9,6 +9,7 @@ const testItem = function(id, image, testName){
                   rounded-[20px]
                   cursor-pointer
                   group
+                  noSelect
                   ">
         <div class="overflow-hidden 
                     relative

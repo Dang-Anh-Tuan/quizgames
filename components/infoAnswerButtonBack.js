@@ -29,7 +29,8 @@ const infoAnswerButtonBack = function () {
             hover:text-white
             transition-all
             duration-300
-            ease-in-out" 
+            ease-in-out
+            noSelect" 
                       >Back</button>
   `;
 

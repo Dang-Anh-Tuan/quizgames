@@ -70,7 +70,8 @@ const popUpScore = function (scoreUser, scoreOfTest) {
                             after:origin-center
                             after:opacity-0
                             hover:after:scale-x-100
-                            hover:after:opacity-100"  >Back to list test</button>
+                            hover:after:opacity-100
+                            noSelect"  >Back to list test</button>
             <button id="popup-result__btn-close"
                     class="outline-none
                           relative
@@ -90,7 +91,8 @@ const popUpScore = function (scoreUser, scoreOfTest) {
                           hover:text-white
                           transition-all
                           duration-300
-                          ease-in-out" 
+                          ease-in-out
+                          noSelect" 
                       >Close</button>
           </div>
       </div>

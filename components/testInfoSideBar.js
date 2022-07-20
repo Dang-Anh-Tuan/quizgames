@@ -40,7 +40,8 @@ const testInfoSideBar = async function (currentTest) {
                           flex 
                           justify-center 
                           items-center
-                          cursor-pointer">
+                          cursor-pointer
+                          noSelect">
                   <div class="p-2">
                     <i class="fa-regular fa-comment"></i>
                   </div>
@@ -58,7 +59,8 @@ const testInfoSideBar = async function (currentTest) {
                           flex 
                           justify-center 
                           items-center
-                          cursor-pointer">
+                          cursor-pointer
+                          noSelect">
                 <div class="p-2">
                   <i class="fa-solid fa-ranking-star"></i>
                 </div>

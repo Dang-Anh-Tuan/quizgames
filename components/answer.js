@@ -8,7 +8,8 @@ const answer = function (id, content, idQuestion, type) {
                          id="a-${id}"
                          class="input-answer
                                 hidden
-                                peer"
+                                peer
+                                noSelect"
                          value="${content}">
                 <label for="a-${id}" class="block
                                       w-full
@@ -30,6 +31,7 @@ const answer = function (id, content, idQuestion, type) {
                                       peer-checked:bg-primary-nav
                                     peer-checked:text-white
                                     peer-checked:border-[#b4e0ff]
+                                    noSelect
                                       " 
                 >${content}</label>
               </div>
