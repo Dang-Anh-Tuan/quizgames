@@ -5,19 +5,20 @@ import question from "./question.js";
 const listQuestion = function (listQuestion) {
   const containerAllQuestion = document.createElement("div");
   containerAllQuestion.classList.add(
+    "w-full",
     "lg:w-[66%]",
     "m-auto",
-    "py-[36px]",
+    "pb-[36px]",
     "px-8",
     "bg-white",
     "bg-opacity-90",
-    "min-h-[100vh]"
+    "min-h-[100vh]",
   );
-  
+
   listQuestion.forEach((q, index) => {
     const containerQuestion = document.createElement("div");
 
-    containerQuestion.classList.add("container-question","mb-8");
+    containerQuestion.classList.add("container-question", "mb-8");
     containerQuestion.setAttribute("id", `${q.id}`);
     containerQuestion.appendChild(question(q, index));
 

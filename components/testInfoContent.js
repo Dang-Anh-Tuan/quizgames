@@ -10,7 +10,6 @@ const testInfoContent = function (currentTest) {
     "shadow-2xl",
     "rounded-[25px]",
     "lg:mr-4",
-    "mt-[38px]",
     "mr-3",
     "ml-3"
   );

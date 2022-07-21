@@ -5,9 +5,11 @@ import {
 } from "../constant/api.js";
 
 export const getCommentsByTest = async function (testId, sortNearly = false) {
-  const url = `${ENTRYPOINT}/comments?testId=${testId}`;
+  let url = `${ENTRYPOINT}/comments?testId=${testId}`;
 
-  sortNearly && url.concat(COMMENT_SORT_NEARLY_OPTION);
+  if (sortNearly) {
+    url = url.concat(COMMENT_SORT_NEARLY_OPTION);
+  }
 
   const response = await fetch(url);
   const comments = await response.json();

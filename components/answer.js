@@ -32,6 +32,7 @@ const answer = function (id, content, idQuestion, type) {
                                     peer-checked:text-white
                                     peer-checked:border-[#b4e0ff]
                                     noSelect
+                                    
                                       " 
                 >${content}</label>
               </div>

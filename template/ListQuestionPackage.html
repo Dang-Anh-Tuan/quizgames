@@ -18,76 +18,64 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./style/output.css" />
-   
+    <link rel="stylesheet" href="../style/output.css" />
   </head>
   <body>
     <div
-      class="min-h-[100vh] 
-             max-w-[1200px] 
-             m-auto 
-             grid 
-             gap-x-[35px] 
-             gap-y-5 
-             py-[50px]
-             px-[50px]
-             grid-rows-1
-             md:grid-cols-2
-             lg:grid-cols-3
-             xl:grid-cols-4
-             xl:px-0" 
+      class="pb-[50px] pt-[100px] max-w-[1200px] m-auto grid gap-x-[35px] gap-y-5  px-[50px] grid-rows-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:px-0"
     >
-
-      <div class="h-[300px] 
-                  shadow-2xl 
-                  rounded-[20px]
-                  cursor-pointer
-                  group
-                  ">
-        <div class="overflow-hidden 
-                    relative
-                    w-full 
-                    h-[200px]
-                    rounded-tl-[20px] 
-                    rounded-tr-[20px]
-                    after:content-['']
-                    after:absolute
-                    after:w-full
-                    after:h-full
-                    after:top-0
-                    after:left-0
-                    after:bg-[rgba(255,255,255,0.2)]
-                    after:blur-md
-                    after:z-10
-                    after:opacity-0
-                    after:group-hover:opacity-100
-                    ">
+      <div
+        id="${id}"
+        class="test-item h-[300px] shadow-2xl rounded-[20px] cursor-pointer group noSelect"
+      >
+        <div
+          class="overflow-hidden relative w-full h-[200px] rounded-tl-[20px] rounded-tr-[20px] after:content-[''] after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-[rgba(255,255,255,0.2)] after:blur-md after:z-10 after:opacity-0 after:group-hover:opacity-100"
+        >
           <img
             src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
-            alt=""
-            class="object-fit
-                   w-full
-                   h-[200px] 
-                   transition-all
-                   duration-300
-                   group-hover:scale-125
-                   "
+            class="object-fit w-full h-[200px] transition-all duration-300 group-hover:scale-125" alt=""
           />
         </div>
-        <div class="ml-4 mt-4 w-[80%] ">
-          <h3 class="leading-[1.4rem] 
-                     font-[1.2rem] 
-                     font-semibold 
-                     wrap-text
-                    ">
-            Ten bai test en bai testen bai testen bai testen bai testen bai
-            testen bai testen bai test
+        <div class="ml-4 mt-4 w-[80%]">
+          <h3 class="leading-[1.4rem] font-[1.2rem] font-semibold wrap-text">
+            ${testName}
           </h3>
         </div>
       </div>
-  
      
-
+      
+    </div>
+    <div class="flex w-full py-8 justify-center items-center mt-8" >
+      <button   id="list-test__btn-load"
+                class="outline-none
+                      relative
+                      text-center 
+                      min-w-[200px] 
+                      h-[48px] 
+                      px-4 
+                      bg-primary-color 
+                      m-auto rounded-full 
+                      text-white 
+                      text-[1.2rem] 
+                      transition-all 
+                      duration-300 
+                      ease-linear
+                      after:content-['']
+                      after:absolute
+                      after:top-0
+                      after:right-0
+                      after:w-full
+                      after:h-full
+                      after:bg-[rgba(255,255,255,0.3)]
+                      after:rounded-full
+                      after:scale-x-[0.2]
+                      after:opacity-0
+                      after:transition-all
+                      after:duration-300
+                      after:origin-center
+                      hover:after:scale-x-100
+                      hover:after:opacity-100
+                      " >Load More</button>
     </div>
   </body>
 </html>

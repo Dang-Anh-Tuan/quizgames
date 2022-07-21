@@ -15,9 +15,9 @@ const infoAnswer = function (test, handleSubmit) {
     "h-fit",
     "lg:w-[32%]",
     "top-[36px]",
+    "lg:top-[100px]",
     "right-0",
     "pb-[50px]",
-    "lg:mt-9",
     "mb-[50px]",
     "mr-3",
     "ml-3"

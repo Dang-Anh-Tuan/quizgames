@@ -1,6 +1,5 @@
-import { render, unmount } from "../core/core.js";
-import listTestPage from "../pages/listTestPage.js";
-import handleClickTestItems from "./handleClickTestItems.js";
+import { unmount } from "../core/core.js";
+import handleBackListQuestionToListTest from "./handleBackListQuestionToListTest.js";
 
 async function handleClosePopup(popUpScoreEl) {
   await unmount(popUpScoreEl, document.getElementById("container"));
@@ -13,14 +12,9 @@ const setHandleBtnPopupScore = async function (popUpScoreEl, idTimer = null) {
   const btnClosePopupScore = document.getElementById("popup-result__btn-close");
 
   btnBackPopupScore.onclick = async function () {
-    if (idTimer) clearInterval(idTimer);
-
     const root = document.getElementById("container");
-    root.innerHTML = "";
-    const listTestPageEl = await listTestPage();
 
-    render(listTestPageEl, root);
-    handleClickTestItems(listTestPageEl, root);
+    handleBackListQuestionToListTest(null, idTimer, root);
   };
 
   btnClosePopupScore.onclick = async function () {

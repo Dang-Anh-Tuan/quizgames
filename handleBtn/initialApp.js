@@ -23,7 +23,6 @@ async function initialApp(root) {
       regexName,
       MSG_NAME_ERROR
     );
-    console.log(msgError);
     errorName.textContent = msgError;
   };
 

@@ -3,7 +3,10 @@ const navBar = function () {
 
   navBarEl.innerHTML = `
     <header class="h-[68px] 
-                   bg-primary-nav">
+                   bg-primary-nav
+                   fixed
+                   w-full
+                   z-[10000]">
       <div
         class="flex 
               justify-center

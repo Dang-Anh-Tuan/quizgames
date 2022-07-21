@@ -1,12 +1,13 @@
-import { render, unmount } from "../core/core.js";
-import listTestPage from "../pages/listTestPage.js";
+import { unmount } from "../core/core.js";
 import handleClickTestItems from "./handleClickTestItems.js";
+import renderListTestPage from "./renderListTestPage.js";
 
 const handleBackTestInfoToListTest = async function (infoTestPageEl, root) {
-  const listTestPageEl = await listTestPage();
 
-  render(listTestPageEl, root);
+
+  const listTestPageEl = await renderListTestPage(root);
   handleClickTestItems(listTestPageEl, root);
+
 
   await unmount(infoTestPageEl, root);
 };

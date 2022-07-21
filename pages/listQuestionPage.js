@@ -11,12 +11,12 @@ const listQuestionPage = function (currentTest, handleSubmit) {
   containerQuestionPageEl.classList.add(
     "relative",
     "max-w-[1200px]",
-    "mt-6",
     "flex",
     "flex-col-reverse",
     "lg:flex-row",
     "m-auto",
-    "gap-3"
+    "gap-3",
+    "pt-[100px]"
   );
 
   const { infoAnswerEl, idTimer } = infoAnswer(currentTest, handleSubmit);

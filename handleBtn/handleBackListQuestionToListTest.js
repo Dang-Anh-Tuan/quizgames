@@ -1,20 +1,22 @@
-import { render, unmount } from "../core/core.js";
-import listTestPage from "../pages/listTestPage.js";
+import { unmount } from "../core/core.js";
 import handleClickTestItems from "./handleClickTestItems.js";
+import renderListTestPage from "./renderListTestPage.js";
 
 const handleBackListQuestionToListTest = async function (
-  listQuestionPageEl,
-  root,
-  idTimer
+  listQuestionPageEl = null,
+  idTimer = null,
+  root
 ) {
-  clearInterval(idTimer);
+  idTimer && clearInterval(idTimer);
 
-  const listTestPageEl = await listTestPage();
+  if (!listQuestionPageEl) {
+    root.innerHTML = "";
+  } else {
+    await unmount(listQuestionPageEl, root);
+  }
 
-  render(listTestPageEl, root);
+  const listTestPageEl = await renderListTestPage(root);
   handleClickTestItems(listTestPageEl, root);
-
-  await unmount(listQuestionPageEl, root);
 };
 
 export default handleBackListQuestionToListTest;

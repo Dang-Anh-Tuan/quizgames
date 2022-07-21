@@ -13,7 +13,8 @@ const infoTestPage = async function (currentTest) {
     "max-w-[1200px]",
     "lg:flex",
     "m-auto",
-    "gap-3"
+    "gap-3",
+    "py-[100px]"
   );
 
   containerTestInfoPageEl.appendChild(testInfoContent(currentTest));

@@ -1,7 +1,7 @@
-import { render, unmount } from "../core/core.js";
+import { unmount } from "../core/core.js";
 import saveUser from "../helper/saveUser.js";
-import listTestPage from "../pages/listTestPage.js";
 import handleClickTestItems from "./handleClickTestItems.js";
+import renderListTestPage from "./renderListTestPage.js";
 
 const handleClickBtnStart = async function (
   inputName,
@@ -14,8 +14,7 @@ const handleClickBtnStart = async function (
   if (newUser) {
     localStorage.setItem("currentUser", JSON.stringify(newUser));
 
-    const listTestPageEl = await listTestPage();
-    render(listTestPageEl, root);
+    const listTestPageEl = await renderListTestPage(root);
 
     handleClickTestItems(listTestPageEl, root);
 

@@ -1,0 +1,1 @@
+export const AMOUNT_TEST_PER_PAGE = 4
