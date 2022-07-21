@@ -11,12 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
-          crossorigin="anonymous" 
-          referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style/output.css" />
+    <style>
+      select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px;
+}
+    </style>
   </head>
   <body>
     <header class="h-[68px] 
@@ -52,6 +62,148 @@
                      tracking-">QUIZGAMEs</h3>
         </div>
         <div class="flex
+        items-center
+        h-[36px]
+        xl:w-fit w-full
+        "   >
+        <div class="relative  cursor-pointer group">
+          <div class="flex items-center justify-center">
+            <p class=" text-white text-[1.2rem]">Hello, User</p>
+            <div class=" text-white ml-2">
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+          <div class="hidden
+                      absolute 
+                      top-[calc(100%+19.5px)]
+                      right-0 
+                      xl:right-[-24px]
+                      bg-white 
+                      shadow-lg 
+                      rounded-br-[8px] 
+                      rounded-bl-[8px]
+                      w-full
+                      xl:w-[200px]
+                      group-hover:block
+                      after:absolute
+                      after:contents['']
+                      after:w-full
+                      after:h-[20px]
+                      after:bg-transparent
+                      after:top-[-20px]
+                      after:left-0
+                      ">
+            <div class="flex
+                        items-center
+                        px-4 
+                        py-3 
+                        border-b-[1px] 
+                        text-[1.1rem] 
+                        hover:text-primary">
+                      <p>Dark mode</p>
+                      <div class="  flex
+                                    items-center
+                                    relative
+                                    w-[50px] 
+                                    h-[25px] 
+                                    border-[2px] 
+                                    border-gray-500
+                                    rounded-full
+                                    ml-3
+                                    after:absolute
+                                    after:w-[20px]
+                                    after:h-[20px]
+                                    after:rounded-full
+                                    after:bg-gray-500
+                                    after:translate-x-[2px]
+                                    dark:border-[#2e9ce9]
+                                    dark:after:bg-primary
+                                    dark:after:translate-x-[calc(100%+4px)]
+                                    
+
+                      ">
+
+                      
+                    </div>
+                    </div>
+            <button class="px-4 
+                           py-3
+                           text-[1.1rem] 
+                           hover:text-primary 
+                           w-full text-left">Log out</button>
+          </div>
+        </div>
+  
+        
+          
+        </div>
+      </div>
+    </header>
+    <div class="pt-[120px]
+                max-w-[1200px] 
+                h-8
+                flex
+                flex-col
+                xl:flex-row
+                justify-end
+                items-center
+                px-[50px]
+                lg:px-0
+                "     >
+        <div class="relative flex items-center h-[36px] mr-6 ">
+          <p class=" mr-4 font-normal text-[1.2rem] text-gray-400" >Level test  </p>
+          <select name="" id="" class="appearance-none
+                                       pr-8
+                                       pl-4
+                                       py-2
+                                       rounded-[5px]
+                                       outline-none
+                                       text-primary
+                                       border
+                                       border-[#2e9ce9]
+                                       " >
+            <option class="block
+                           pr-8
+                           pl-4
+                           py-2
+                         bg-white 
+                           text-primary 
+                           border-primary 
+                            outline-none
+            "value="None" selected>None</option>
+            <option class="block
+                           pr-8
+                           pl-4
+                           py-2
+                         bg-white 
+                           text-primary 
+                           border-primary 
+                           outline-none
+                           " value="Easy">Easy</option>
+            <option class="block
+                           pr-8
+                           pl-4
+                           py-2
+                         bg-white 
+                           text-primary 
+                           border-primary 
+                           outline-none
+                           " value="Middle">Middle</option>
+            <option class="block
+                           pr-8
+                           pl-4
+                           py-2
+                         bg-white 
+                           text-primary 
+                           border-primary 
+                           outline-none
+                           " value="Hard">Hard</option>
+          </select>
+          <div class="absolute text-primary right-3">
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+        <div class="flex
                     items-center
                     h-[36px]
                     "   >
@@ -62,6 +214,11 @@
                         rounded-full
                         outline-none
                         px-4
+                        py-2
+                        border-gray-300 
+                        border-[2px]
+                      focus:border-primary
+
                         "
                   placeholder="Search ...">
           <button class="flex
@@ -71,13 +228,14 @@
                          p-3
                          ml-2
                          rounded-full
-                         bg-white
+                         bg-primary
+                         text-white
+                         hover:bg-[#76c2f8]
                          group">
             <i class="fa-solid fa-magnifying-glass
-                      group-hover:text-primary"></i>
+                       "></i>
           </button>
         </div>
-      </div>
-    </header>
+    </div>
   </body>
 </html>

@@ -3,7 +3,7 @@ import { render } from "../core/core.js";
 import listTestPage from "../pages/listTestPage.js";
 import handleLoadMore from "./handleLoadMore.js";
 
-const renderListTestPage = async function(root) {
+const renderListTestPage = async function (root) {
   let currentPage = 1;
   const listTestData = await getAllTests({
     page: currentPage,
@@ -18,10 +18,16 @@ const renderListTestPage = async function(root) {
   );
 
   btnLoadMore.onclick = async function () {
-    await handleLoadMore(this, containerListTest, ++currentPage);
+    await handleLoadMore(
+      this,
+      containerListTest,
+      ++currentPage,
+      listTestPageEl,
+      root
+    );
   };
 
-  return listTestPageEl
-}
+  return listTestPageEl;
+};
 
-export default renderListTestPage
+export default renderListTestPage;

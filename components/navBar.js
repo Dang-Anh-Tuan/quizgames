@@ -1,3 +1,5 @@
+import getCurrentName from "../helper/getCurrentName.js";
+
 const navBar = function () {
   const navBarEl = document.createElement("div");
 
@@ -35,33 +37,74 @@ const navBar = function () {
                      text-white
                      tracking-">QUIZGAMEs</h3>
         </div>
-        <div class="flex
-                    items-center
-                    h-[36px]
-                    "   >
-          <input type="text"
-                 class="appearance-none
-                        w-[300px]
-                        h-full
-                        rounded-full
-                        outline-none
-                        px-4
-                        "
-                  placeholder="Search ...">
-          <button class="flex
-                         justify-center
-                         items-center
-                         h-full
-                         p-3
-                         ml-2
-                         rounded-full
-                         bg-white
-                         group
-                         noSelect">
-            <i class="fa-solid fa-magnifying-glass
-                      group-hover:text-primary"></i>
-          </button>
+        <div class="relative cursor-pointer group xl:w-fit w-full text-center">
+          <div class="flex items-center justify-center">
+            <p class=" text-white text-[1.2rem]">Hi, ${getCurrentName()}</p>
+            <div class=" text-white ml-2">
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+          
+          <div class="hidden
+                      absolute 
+                      top-[calc(100%+19.5px)] 
+                      right-0 
+                      xl:right-[-24px]
+                      bg-white 
+                      shadow-lg 
+                      rounded-br-[8px] 
+                      rounded-bl-[8px] 
+                      w-full
+                      xl:w-[200px]
+                      group-hover:block
+                      after:absolute
+                      after:contents['']
+                      after:w-full
+                      after:h-[20px]
+                      after:bg-transparent
+                      after:top-[-20px]
+                      after:left-0
+                      ">
+            <div class="flex
+                        items-center
+                        px-4 
+                        py-3 
+                        border-b-[1px] 
+                        text-[1.1rem] 
+                        hover:text-primary">
+                      <p>Dark mode</p>
+                      <div class="  flex
+                                    items-center
+                                    relative
+                                    w-[50px] 
+                                    h-[25px] 
+                                    border-[2px] 
+                                    border-gray-500
+                                    rounded-full
+                                    ml-3
+                                    after:absolute
+                                    after:w-[20px]
+                                    after:h-[20px]
+                                    after:rounded-full
+                                    after:bg-gray-500
+                                    after:translate-x-[2px]
+                                    dark:border-[#2e9ce9]
+                                    dark:after:bg-primary
+                                    dark:after:translate-x-[calc(100%+4px)]
+                                    
+
+                      ">
+
+                    </div>
+                    </div>
+            <button class="px-4 
+                           py-3
+                           text-[1.1rem] 
+                           hover:text-primary 
+                           w-full text-left">Log out</button>
+          </div>
         </div>
+  
       </div>
     </header>
   `;

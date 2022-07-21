@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   mode: "jit",
   purge: ["./*.html", "./*.{js,jsx,ts,tsx,vue}", "./template/**/*.{html,js}"],
   content: ["./*.{html,js}", "./template/**/*.{html,js}"],
@@ -11,7 +12,6 @@ module.exports = {
       colors: {
         primary: "#2e9ce9",
         primary_light: "#2e9ce9",
-
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

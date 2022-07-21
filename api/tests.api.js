@@ -16,7 +16,10 @@ export const getAllTests = async function (options = null) {
     url = url.concat("&_end=", options.end);
   }
   if (options.search) {
-    url = url.concat("&", search.field, "_like=", search.keyword);
+    url = url.concat("&", options.search.field, "_like=", options.search.keyword);
+  }
+  if (options.level !== 'None') {
+    url = url.concat("&level=",options.level);
   }
 
   const response = await fetch(url);

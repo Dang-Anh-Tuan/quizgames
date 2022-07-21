@@ -2,7 +2,7 @@ import testItem from "./testItem.js";
 
 const listTest = function (listTestData) {
   const containerListTestEl = document.createElement("div");
-  containerListTestEl.setAttribute("id", "list-test__block-list-test")
+  containerListTestEl.setAttribute("id", "list-test__block-list-test");
 
   containerListTestEl.classList.add(
     "max-w-[1200px]",
@@ -10,7 +10,6 @@ const listTest = function (listTestData) {
     "grid",
     "gap-x-[35px]",
     "gap-y-5",
-    "pt-[100px]",
     "pb-[50px]",
     "px-[50px]",
     "grid-rows-1",
@@ -18,14 +17,14 @@ const listTest = function (listTestData) {
     "lg:grid-cols-3",
     "xl:grid-cols-4",
     "xl:px-0",
+    "pt-[150px]",
+    "xl:pt-[50px]"
   );
 
   listTestData.forEach((item) => {
     const testItemEl = testItem(item.id, item.thumb, item.name);
     containerListTestEl.append(testItemEl);
   });
-
- 
 
   return containerListTestEl;
 };
