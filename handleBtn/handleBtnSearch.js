@@ -27,7 +27,8 @@ const handleBtnSearch = async function (btnSearch, listTestPageEl, root) {
 
   handleClickTestItems(listTestPageElNew, root);
 
-  btnSearch.onclick = async function () {
+  document.querySelector("#btn-search").onclick = async function () {
+    
     await handleBtnSearch(this, listTestPageElNew, root);
   };
 };
