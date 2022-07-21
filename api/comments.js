@@ -1,7 +1,13 @@
-import { ENTRYPOINT, REQUEST_OPTION } from "../constant/api.js";
+import {
+  COMMENT_SORT_NEARLY_OPTION,
+  ENTRYPOINT,
+  REQUEST_OPTION,
+} from "../constant/api.js";
 
-export const getCommentsByTest = async function (testId) {
+export const getCommentsByTest = async function (testId, sortNearly = false) {
   const url = `${ENTRYPOINT}/comments?testId=${testId}`;
+
+  sortNearly && url.concat(COMMENT_SORT_NEARLY_OPTION);
 
   const response = await fetch(url);
   const comments = await response.json();

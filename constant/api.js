@@ -5,3 +5,5 @@ export const REQUEST_OPTION = {
     "Access-Control-Allow-Origin": "*",
   };
   
+
+export const COMMENT_SORT_NEARLY_OPTION = "&_sort=createdTime&_order=desc"

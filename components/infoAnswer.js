@@ -54,8 +54,6 @@ const infoAnswer = function (test, handleSubmit) {
     test
   );
 
-  // containerContentInfo.appendChild(infoTextRow("Test name", "59:00", true));
-
   infoAnswerEl.appendChild(containerContentInfo);
 
   infoAnswerEl.appendChild(infoAnswerButtonSubmit());

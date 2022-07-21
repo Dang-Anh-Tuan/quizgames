@@ -5,20 +5,31 @@ import getCurrentEmail from "../helper/getCurrentEmail.js";
 const handleSendComment = async function (testId) {
   const currentEmail = getCurrentEmail();
   const inputCommentEl = document.getElementById("test-info__input-comment");
-  const commentConent = inputCommentEl.value;
+  const commentContent = inputCommentEl.value;
 
   const newComment = {
     email: currentEmail,
-    content: commentConent,
+    content: commentContent,
     testId: testId,
+    createdTime: new Date(),
   };
 
   const commentResponse = await createComment(newComment);
 
-  inputCommentEl.value = ''
+  inputCommentEl.value = "";
 
-  const commentBlockEl = document.getElementById("test-info__container-comment");
-  commentBlockEl.appendChild(testInfoComment(commentResponse));
+  const commentBlockEl = document.getElementById(
+    "test-info__container-comment"
+  );
+  const commentItems = document.querySelectorAll(".comment-item");
+  if (commentItems) {
+    commentBlockEl.insertBefore(
+      testInfoComment(commentResponse),
+      commentBlockEl.firstChild
+    );
+  } else {
+    commentBlockEl.appendChild(testInfoComment(commentResponse));
+  }
 };
 
 export default handleSendComment;

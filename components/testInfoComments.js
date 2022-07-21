@@ -2,7 +2,7 @@ import { getCommentsByTest } from "../api/comments.js";
 import testInfoComment from "./testInfoComment.js";
 
 const testInfoComments = async function (testId) {
-  const comments = await getCommentsByTest(testId);
+  const comments = await getCommentsByTest(testId, true);
 
   const testInfoCommentsEl = document.createElement("div");
 

@@ -657,16 +657,20 @@ video {
   margin: auto;
 }
 
-.mr-4 {
-  margin-right: 1rem;
-}
-
 .mt-\[38px\] {
   margin-top: 38px;
 }
 
 .mt-\[50px\] {
   margin-top: 50px;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
 }
 
 .mt-9 {
@@ -681,14 +685,6 @@ video {
   margin-right: 0.5rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -699,6 +695,18 @@ video {
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mb-\[50px\] {
+  margin-bottom: 50px;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
 .ml-2 {
@@ -723,18 +731,6 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mb-\[50px\] {
-  margin-bottom: 50px;
-}
-
-.mr-3 {
-  margin-right: 0.75rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
 }
 
 .block {
@@ -799,10 +795,6 @@ video {
   height: 200px;
 }
 
-.h-\[400px\] {
-  height: 400px;
-}
-
 .max-h-\[400px\] {
   max-height: 400px;
 }
@@ -823,12 +815,8 @@ video {
   min-height: 500px;
 }
 
-.min-h-\[300px\] {
-  min-height: 300px;
-}
-
-.min-h-\[100px\] {
-  min-height: 100px;
+.w-\[40px\] {
+  width: 40px;
 }
 
 .w-full {
@@ -867,14 +855,6 @@ video {
 
 .w-\[300px\] {
   width: 300px;
-}
-
-.w-\[40px\] {
-  width: 40px;
-}
-
-.w-\[30px\] {
-  width: 30px;
 }
 
 .min-w-\[160px\] {
@@ -1190,16 +1170,12 @@ video {
   font-size: 1.6rem;
 }
 
+.text-\[0\.8rem\] {
+  font-size: 0.8rem;
+}
+
 .font-semibold {
   font-weight: 600;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.font-thin {
-  font-weight: 100;
 }
 
 .font-normal {
@@ -1208,6 +1184,14 @@ video {
 
 .font-light {
   font-weight: 300;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .italic {
@@ -1239,6 +1223,11 @@ video {
   color: rgb(46 156 233 / var(--tw-text-opacity));
 }
 
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1267,16 +1256,6 @@ video {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .opacity-\[1\] {
@@ -1574,10 +1553,6 @@ video {
 
   .lg\:flex-row {
     flex-direction: row;
-  }
-
-  .lg\:gap-3 {
-    gap: 0.75rem;
   }
 }
 
