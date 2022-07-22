@@ -1,7 +1,12 @@
 import { getAllTests } from "../api/tests.api.js";
 import { render, unmount } from "../core/core.js";
 import listTestPage from "../pages/listTestPage.js";
+import disabledBtn from "../sideEffect/disabledBtn.js";
 import handleClickTestItems from "./handleClickTestItems.js";
+import setHandleBtnDarkMode from "./setHandleBtnDarkMode.js";
+import setHandleBtnSearch from "./setHandleBtnSearch.js";
+import setHandleLogoHomePage from "./setHandleLogoHomePage.js";
+import setHandleLogoutBtn from "./setHandleLogoutBtn.js";
 
 const handleBtnSearch = async function (btnSearch, listTestPageEl, root) {
   const levelSearch = document.querySelector("#select-level").value;
@@ -27,10 +32,16 @@ const handleBtnSearch = async function (btnSearch, listTestPageEl, root) {
 
   handleClickTestItems(listTestPageElNew, root);
 
-  document.querySelector("#btn-search").onclick = async function () {
-    
-    await handleBtnSearch(this, listTestPageElNew, root);
-  };
+  disabledBtn(document.getElementById("list-test__btn-load"));
+
+  setHandleBtnSearch(listTestPageElNew, root);
+
+  setHandleLogoHomePage(listTestPageElNew, root);
+
+  setHandleBtnDarkMode();
+
+  setHandleLogoutBtn(root);
+
 };
 
 export default handleBtnSearch;

@@ -3,9 +3,9 @@ import preHandleGetIDAnswer from "../helper/preHandleGetIDAnswer.js";
 const showCorrectAnswer = function (containerQuestionEl, currentTest) {
   const questionsCurrentTest = currentTest.questions;
 
-  containerQuestionEl.forEach((containerQuesiton) => {
-    const labelAnswers = containerQuesiton.querySelectorAll("label");
-    const currentQuestionId = containerQuesiton.id;
+  containerQuestionEl.forEach((containerQuestion) => {
+    const labelAnswers = containerQuestion.querySelectorAll("label");
+    const currentQuestionId = containerQuestion.id;
     const currentQuestionArr = questionsCurrentTest.filter(
       (q) => q.id == currentQuestionId
     );

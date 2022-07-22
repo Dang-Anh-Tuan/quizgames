@@ -18,7 +18,7 @@ export const getAllTests = async function (options = null) {
   if (options.search) {
     url = url.concat("&", options.search.field, "_like=", options.search.keyword);
   }
-  if (options.level !== 'None') {
+  if (options.level !== 'None' && options.level !== undefined) {
     url = url.concat("&level=",options.level);
   }
 

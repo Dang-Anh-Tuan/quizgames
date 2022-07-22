@@ -2,7 +2,12 @@ import { unmount } from "../core/core.js";
 import saveUser from "../helper/saveUser.js";
 import handleBtnSearch from "./handleBtnSearch.js";
 import handleClickTestItems from "./handleClickTestItems.js";
+import handleLogoHomePage from "./handleLogoHomePage.js";
 import renderListTestPage from "./renderListTestPage.js";
+import setHandleBtnDarkMode from "./setHandleBtnDarkMode.js";
+import setHandleBtnSearch from "./setHandleBtnSearch.js";
+import setHandleLogoHomePage from "./setHandleLogoHomePage.js";
+import setHandleLogoutBtn from "./setHandleLogoutBtn.js";
 
 const handleClickBtnStart = async function (
   inputName,
@@ -19,11 +24,13 @@ const handleClickBtnStart = async function (
 
     handleClickTestItems(listTestPageEl, root);
 
-    const btnSearch = document.querySelector("#btn-search");
-    btnSearch.onclick = async function () {
-      console.log("call");
-      await handleBtnSearch(this, listTestPageEl, root);
-    };
+    setHandleBtnSearch(listTestPageEl, root);
+
+    setHandleLogoHomePage(listTestPageEl, root);
+
+    setHandleBtnDarkMode();
+
+    setHandleLogoutBtn(root);
 
     await unmount(loginPageEL, root);
   }

@@ -31,7 +31,7 @@ const navBar = function () {
           <img src="./static/images/logo-squid.png" 
                alt="" 
                class="h-full" />
-          <h3  class="ml-2
+          <h3  class="
                      text-[1.6rem]
                      font-semibold
                      text-white
@@ -65,7 +65,9 @@ const navBar = function () {
                       after:top-[-20px]
                       after:left-0
                       ">
-            <div class="flex
+            <div  id="btn-dark-mode"
+            
+                  class="flex
                         items-center
                         px-4 
                         py-3 
@@ -91,13 +93,16 @@ const navBar = function () {
                                     dark:border-[#2e9ce9]
                                     dark:after:bg-primary
                                     dark:after:translate-x-[calc(100%+4px)]
-                                    
+                                    transition-all
+                                    duration-300
+                                    ease-in-out
 
                       ">
 
                     </div>
                     </div>
-            <button class="px-4 
+            <button  id="btn-log-out"
+                    class="px-4 
                            py-3
                            text-[1.1rem] 
                            hover:text-primary 

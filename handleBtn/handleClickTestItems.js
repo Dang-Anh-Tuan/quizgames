@@ -6,6 +6,8 @@ import handleBtnStartTest from "./handleBtnStartTest.js";
 import handleClickCommentBtn from "./handleClickCommentBtn.js";
 import handleClickRankingBtn from "./handleClickRankingBtn.js";
 import handleSendComment from "./handleSendComment.js";
+import setHandleBtnDarkMode from "./setHandleBtnDarkMode.js";
+import setHandleLogoutBtn from "./setHandleLogoutBtn.js";
 
 async function handleTestItemClick(id, listTestPageEl, root) {
   const currentTest = await getTestById(id);
@@ -44,6 +46,10 @@ async function handleTestItemClick(id, listTestPageEl, root) {
     await handleBackTestInfoToListTest(infoTestPageEl, root)
   }
 
+  setHandleBtnDarkMode();
+
+  setHandleLogoutBtn(root);
+
   await unmount(listTestPageEl, root);
 }
 
@@ -54,6 +60,8 @@ const handleClickTestItems = function (listTestPageEl, root) {
       await handleTestItemClick(testItem.id, listTestPageEl, root);
     };
   }
+
+
 };
 
 export default handleClickTestItems;

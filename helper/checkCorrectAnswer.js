@@ -19,7 +19,7 @@ const checkCorrectAnswer = function (answerSelected, questionsOfTest) {
       scoreUser += question.score;
   });
 
-  return {scoreUser, scoreOfTest}
+  return {scoreUser, scoreOfTest, correctAnswersOfUser}
 };
 
 const preHandleCorrectArray = function (questionsOfTest) {

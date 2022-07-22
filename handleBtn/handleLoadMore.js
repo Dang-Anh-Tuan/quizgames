@@ -3,6 +3,7 @@ import testItem from "../components/testItem.js";
 import { AMOUNT_TEST_PER_PAGE } from "../constant/pagination.js";
 import disabledBtn from "../sideEffect/disabledBtn.js";
 import handleClickTestItems from "./handleClickTestItems.js";
+import setHandleBtnDarkMode from "./setHandleBtnDarkMode.js";
 
 const handleLoadMore = async function (
   btnLoadMore,
@@ -26,6 +27,8 @@ const handleLoadMore = async function (
     });
 
   handleClickTestItems(listTestPageEl, root);
+
+  setHandleBtnDarkMode();
 };
 
 export default handleLoadMore;

@@ -7,6 +7,7 @@
       "shortDescription": "The Test The test contains 40 questions and there is no time limit. \n The test is not official, it's just a nice way to see how much you know, or don't know, about HTML. \nCount Your Score You will get 1 point for each correct answer.\n At the end of the Quiz, your total score will be displayed. Maximum score is 40 points",
       "timeAnswerMinute": 0.2,
       "scorePass": 40,
+      "level": "Easy",
       "questions": [
         {
           "id": 1,
@@ -246,6 +247,7 @@
       "name": "HTML Basic Part 2",
       "timeAnswerMinute": 5,
       "scorePass": 30,
+      "level": "Middle",
       "shortDescription": "HTML is the standard markup language for creating Web pages.\nWhat is HTML?\nHTML stands for Hyper Text Markup Language\nHTML is the standard markup language for creating Web pages\nHTML describes the structure of a Web page\nHTML consists of a series of elements\nHTML elements tell the browser how to display the content\nHTML elements label pieces of content such as 'this is a heading', 'this is a paragraph', 'this is a link', etc.",
       "questions": [
         {
@@ -491,6 +493,7 @@
       "shortDescription": "Our absolute beginner tutorial will turn you from wannabe to webmaster in just a few hours. Unlike many other HTML tutorials, it’s a step-by-step guide – not a boring long-winded referenOur step-by-step guide teaches you the basics of HTML and how to build your first website. That means how to layout an HTML page, how to add text and images, how to add headings and text formatting, and how to use tables.We’ll get you building your new website in minutes, not hours.Our absolute beginner tutorial will turn you from wannabe to webmaster in just a few hours. Unlike many other HTML tutorials, it’s a step-by-step guide – not a boring long-winded referenOur step-by-step guide teaches you the basics of HTML and how to build your first website. That means how to layout an HTML page, how to add text and images, how to add headings and text formatting, and how to use tables.We’ll get you building your new website in minutes, not hours.",
       "timeAnswerMinute": 3,
       "scorePass": 20,
+      "level": "Hard",
       "questions": [
         {
           "id": 21,
@@ -702,6 +705,7 @@
       "name": "HTML Basic Part 4",
       "timeAnswerMinute": 10,
       "scorePass": 10,
+      "level": "Easy",
       "shortDescription": "The Test The test contains 40 questions and there is no time limit. \n The test is not official, it's just a nice way to see how much you know, or don't know, about HTML. \nCount Your Score You will get 1 point for each correct answer.\n At the end of the Quiz, your total score will be displayed. Maximum score is 40 points",
       "questions": [
         {
@@ -968,6 +972,7 @@
       "shortDescription": "CSS stands for Cascading Style Sheets\nCSS describes how HTML elements are to be displayed on screen, paper, or in other media\nCSS saves a lot of work. It can control the layout of multiple web pages all at once\nExternal stylesheets are stored in CSS files",
       "timeAnswerMinute": 10,
       "scorePass": 5,
+      "level": "Easy",
       "questions": [
         {
           "id": 43,
@@ -1165,6 +1170,7 @@
       "shortDescription": "The Test The test contains 40 questions and there is no time limit. \n The test is not official, it's just a nice way to see how much you know, or don't know, about HTML. \nCount Your Score You will get 1 point for each correct answer.\n At the end of the Quiz, your total score will be displayed. Maximum score is 40 points",
       "timeAnswerMinute": 0.2,
       "scorePass": 40,
+      "level": "Middle",
       "questions": []
     },
     {
@@ -1174,6 +1180,7 @@
       "shortDescription": "The Test The test contains 40 questions and there is no time limit. \n The test is not official, it's just a nice way to see how much you know, or don't know, about HTML. \nCount Your Score You will get 1 point for each correct answer.\n At the end of the Quiz, your total score will be displayed. Maximum score is 40 points",
       "timeAnswerMinute": 0.2,
       "scorePass": 40,
+      "level": "Hard",
       "questions": []
     },
     {
@@ -1183,6 +1190,7 @@
       "shortDescription": "The Test The test contains 40 questions and there is no time limit. \n The test is not official, it's just a nice way to see how much you know, or don't know, about HTML. \nCount Your Score You will get 1 point for each correct answer.\n At the end of the Quiz, your total score will be displayed. Maximum score is 40 points",
       "timeAnswerMinute": 0.2,
       "scorePass": 40,
+      "level": "Middle",
       "questions": []
     },
     {
@@ -1191,6 +1199,7 @@
       "name": "Fake to test load more ...",
       "shortDescription": "The Test The test contains 40 questions and there is no time limit. \n The test is not official, it's just a nice way to see how much you know, or don't know, about HTML. \nCount Your Score You will get 1 point for each correct answer.\n At the end of the Quiz, your total score will be displayed. Maximum score is 40 points",
       "timeAnswerMinute": 0.2,
+      "level": "Hard",
       "scorePass": 40,
       "questions": []
     },
@@ -1201,6 +1210,7 @@
       "shortDescription": "The Test The test contains 40 questions and there is no time limit. \n The test is not official, it's just a nice way to see how much you know, or don't know, about HTML. \nCount Your Score You will get 1 point for each correct answer.\n At the end of the Quiz, your total score will be displayed. Maximum score is 40 points",
       "timeAnswerMinute": 0.2,
       "scorePass": 40,
+      "level": "Easy",
       "questions": []
     },
     {
@@ -1210,6 +1220,7 @@
       "shortDescription": "The Test The test contains 40 questions and there is no time limit. \n The test is not official, it's just a nice way to see how much you know, or don't know, about HTML. \nCount Your Score You will get 1 point for each correct answer.\n At the end of the Quiz, your total score will be displayed. Maximum score is 40 points",
       "timeAnswerMinute": 0.2,
       "scorePass": 40,
+      "level": "Easy",
       "questions": []
     }
   ],
@@ -2124,6 +2135,234 @@
       "email": "abc@gmail.com",
       "score": 0,
       "id": 130
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 131
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 132
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 133
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 134
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 135
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 136
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 137
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 138
+    },
+    {
+      "test": 2,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 139
+    },
+    {
+      "test": 2,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 140
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 141
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 142
+    },
+    {
+      "test": 2,
+      "email": "abc@gmail.com",
+      "score": 40,
+      "id": 143
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 30,
+      "id": 144
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 145
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 146
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 147
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 148
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 149
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 150
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 151
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 152
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 153
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 154
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 155
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 156
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 30,
+      "id": 157
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 15,
+      "id": 158
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 15,
+      "id": 159
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 15,
+      "id": 160
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 5,
+      "id": 161
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 5,
+      "id": 162
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 25,
+      "id": 163
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 0,
+      "id": 164
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 25,
+      "id": 165
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 35,
+      "id": 166
+    },
+    {
+      "test": 1,
+      "email": "abc@gmail.com",
+      "score": 40,
+      "id": 167
+    },
+    {
+      "test": 2,
+      "email": "abc@gmail.com",
+      "score": 10,
+      "id": 168
     }
   ]
 }

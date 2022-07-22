@@ -9,13 +9,13 @@ const infoAnswer = function (test, handleSubmit) {
 
   infoAnswerEl.classList.add(
     "relative",
-    "lg:sticky",
+    "xl:sticky",
     "shadow-2xl",
     "rounded-[25px]",
     "h-fit",
-    "lg:w-[32%]",
+    "xl:w-[32%]",
     "top-[36px]",
-    "lg:top-[100px]",
+    "xl:top-[100px]",
     "right-0",
     "pb-[50px]",
     "mb-[50px]",
@@ -28,11 +28,8 @@ const infoAnswer = function (test, handleSubmit) {
   const containerContentInfo = document.createElement("div");
 
   containerContentInfo.classList.add("px-8");
+  containerContentInfo.setAttribute('id', "container-info-answer");
 
-  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-
-  containerContentInfo.appendChild(infoTextRow("Name", currentUser.name));
-  containerContentInfo.appendChild(infoTextRow("Email", currentUser.email));
   containerContentInfo.appendChild(infoTextRow("Test name", test.name));
   containerContentInfo.appendChild(
     infoTextRow("Time", `${test.timeAnswerMinute} minutes`)

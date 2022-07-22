@@ -13,10 +13,11 @@ const listQuestionPage = function (currentTest, handleSubmit) {
     "max-w-[1200px]",
     "flex",
     "flex-col-reverse",
-    "lg:flex-row",
+    "xl:flex-row",
     "m-auto",
     "gap-3",
-    "pt-[100px]"
+    "py-[50px]",
+    "xl:py-[100px]"
   );
 
   const { infoAnswerEl, idTimer } = infoAnswer(currentTest, handleSubmit);
