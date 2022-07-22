@@ -11,7 +11,8 @@ const testInfoContent = function (currentTest) {
     "rounded-[25px]",
     "lg:mr-4",
     "mr-3",
-    "ml-3"
+    "ml-3",
+    "dark:bg-dark-white-blur"
   );
 
   testInfoContentEl.innerHTML = `
@@ -19,7 +20,8 @@ const testInfoContent = function (currentTest) {
                    text-[2rem] 
                    leading-[2.2rem] 
                    font-semibold 
-                   text-primary">
+                   text-primary
+                   dark:text-dark_primary">
                    ${currentTest.name}</h3>
         <div class="mt-[50px]">
         <div class="flex 
@@ -30,11 +32,12 @@ const testInfoContent = function (currentTest) {
             <div class="flex 
                         justify-start 
                         w-[40px] 
-                        text-primary">
+                        text-primary
+                        dark:text-dark_primary">
               <i class="fa-regular fa-circle-question"></i>
             </div>
-            <p>Question : </p>
-            <p class="ml-4 font-normal">${currentTest.questions.length}</p>
+            <p class="dark:text-dark_primary">Question : </p>
+            <p class="ml-4 font-normal dark:text-dark_primary">${currentTest.questions.length}</p>
           </div>
 
            <div class="flex 
@@ -45,11 +48,12 @@ const testInfoContent = function (currentTest) {
             <div class="flex 
                         justify-start 
                         w-[40px] 
-                        text-primary">
+                        text-primary
+                        dark:text-dark_primary">
               <i class="fa-regular fa-clock"></i>
             </div>
-            <p>Time : </p>
-            <p class="ml-4 font-normal">${currentTest.timeAnswerMinute} minutes</p>
+            <p class="dark:text-dark_primary">Time : </p>
+            <p class="ml-4 font-normal dark:text-dark_primary">${currentTest.timeAnswerMinute} minutes</p>
           </div>
 
            <div class="flex 
@@ -60,11 +64,12 @@ const testInfoContent = function (currentTest) {
             <div class="flex 
                         justify-start 
                         w-[40px] 
-                        text-primary">
+                        text-primary
+                        dark:text-dark_primary">
               <i class="fa-regular fa-circle-check"></i>
             </div>
-            <p>Require score : </p>
-            <p class="ml-4 font-normal">${currentTest.scorePass}</p>
+            <p class="dark:text-dark_primary">Require score : </p>
+            <p class="ml-4 font-normal dark:text-dark_primary">${currentTest.scorePass}</p>
           </div>
           <p class="text-[1.2rem] leading-[2rem] text-gray-500 font-light">${currentTest.shortDescription}</p>
         </div>
@@ -105,7 +110,8 @@ const testInfoContent = function (currentTest) {
                             after:opacity-0
                             hover:after:scale-x-100
                             hover:after:opacity-100
-                            noSelect"  >Start</button>
+                            noSelect
+                            dark:bg-dark-gradient"  >Start</button>
             <button id="info-test__btn-back"
                     class="outline-none
                           relative
@@ -126,7 +132,11 @@ const testInfoContent = function (currentTest) {
                           transition-all
                           duration-300
                           ease-in-out
-                          noSelect" 
+                          noSelect
+                          dark:border-dark_primary
+                          dark:text-dark_primary
+                          dark:hover:bg-dark-gradient
+                          dark:hover:text-white" 
                       >Back</button>
   `;
 

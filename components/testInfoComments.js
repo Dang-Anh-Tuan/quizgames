@@ -21,7 +21,9 @@ const testInfoComments = async function (testId) {
                                       border-[2px] 
                                       border-gray-300 
                                       focus:border-primary
-                                      h-full"
+                                      h-full
+                                      dark:border-dark_primary_light
+                                    dark:focus:border-dark_primary"
                     placeholder="Enter comment ...">
             <button id="test-info__btn-send_comment"
             class="outline-none
@@ -42,7 +44,12 @@ const testInfoComments = async function (testId) {
             transition-all
             duration-300
             ease-in-out
-            noSelect">Send</button>
+            noSelect
+            dark:border-dark_primary
+            dark:text-dark_primary
+            dark:hover:bg-dark-gradient
+            dark:hover:text-white
+            ">Send</button>
             
           </div>
   `;

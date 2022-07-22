@@ -5,7 +5,7 @@ import testInfoSideBar from "../components/testInfoSideBar.js";
 const infoTestPage = async function (currentTest) {
   const infoTestPageEl = document.createElement("div");
 
-  infoTestPageEl.appendChild(navBar());
+  infoTestPageEl.append(navBar());
 
   const containerTestInfoPageEl = document.createElement("div");
   containerTestInfoPageEl.classList.add(

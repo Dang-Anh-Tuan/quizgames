@@ -30,7 +30,11 @@ const infoAnswerButtonBack = function () {
             transition-all
             duration-300
             ease-in-out
-            noSelect" 
+            noSelect
+            dark:border-dark_primary
+            dark:text-dark_primary
+            dark:hover:bg-dark-gradient
+            dark:hover:text-white" 
                       >Back</button>
   `;
 

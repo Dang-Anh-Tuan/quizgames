@@ -24,13 +24,15 @@ const popUpQuitTest = function (scoreUser, scoreOfTest) {
                   translate-y-[-50%]
                   rounded-[25px]
                   px-6
-                  py-10" >
+                  py-10
+                  dark:bg-dark-white-blur" >
           <div class="text-center">
             <p class="text-[1.2rem] 
                       leading[1.4rem] 
                       font-medium 
                       text-primary
-                      select-none">Do you want to quit ?</p>
+                      select-none
+                      dark:text-dark_primary">Do you want to quit ?</p>
           </div>
           <div class="flex w-full justify-between mt-6">
             <button id="popup-result__back-list-test"
@@ -62,7 +64,8 @@ const popUpQuitTest = function (scoreUser, scoreOfTest) {
                             after:opacity-0
                             hover:after:scale-x-100
                             hover:after:opacity-100
-                            noSelect"  >Back to list test</button>
+                            noSelect
+                            dark:bg-dark-gradient"  >Back to list test</button>
             <button id="popup-result__btn-close"
                     class="outline-none
                           relative
@@ -83,7 +86,11 @@ const popUpQuitTest = function (scoreUser, scoreOfTest) {
                           transition-all
                           duration-300
                           ease-in-out
-                          noSelect" 
+                          noSelect
+                          dark:border-dark_primary
+                          dark:text-dark_primary
+                          dark:hover:bg-dark-gradient
+                          dark:hover:text-white" 
                       >Close</button>
           </div>
       </div>

@@ -10,6 +10,7 @@ const testItem = function(id, image, testName){
                   cursor-pointer
                   group
                   noSelect
+                  dark:bg-dark-white-blur
                   ">
         <div class="overflow-hidden 
                     relative
@@ -45,6 +46,7 @@ const testItem = function(id, image, testName){
                      font-[1.2rem] 
                      font-semibold 
                      wrap-text
+                     dark:text-white
                     ">
             ${testName}
           </h3>

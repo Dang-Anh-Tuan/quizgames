@@ -10,7 +10,8 @@ const loader = function () {
     "justify-center",
     "items-center",
     "z-[10000]",
-    "left-0"
+    "left-0",
+    "dark:bg-dark_bg"
   );
 
   loaderEl.innerHTML = `
@@ -29,7 +30,8 @@ const loader = function () {
                   after:left-[50%]
                   after:translate-x-[-50%]
                   after:translate-y-[-50%]
-                  after:absolute">
+                  after:absolute
+                  dark:after:bg-dark_bg">
 
       </div>   
   `;

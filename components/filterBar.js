@@ -22,10 +22,12 @@ const filterBar = function () {
                                        py-2
                                        bg-white
                                        text-primary
-                                       border
+                                       border-[2px]
                                        border-[#2e9ce9]
                                        rounded-[5px]
                                        outline-none
+                                       dark:border-dark_primary
+                                       dark:text-dark_primary
                                      " >
             <option class="block
                            pr-8
@@ -34,6 +36,8 @@ const filterBar = function () {
                          bg-white 
                            text-primary 
                            border-primary 
+                           dark:border-dark_primary
+                         dark:text-dark_primary
                             outline-none
             "value="None" selected>None</option>
             <option class="block
@@ -43,6 +47,8 @@ const filterBar = function () {
                          bg-white 
                            text-primary 
                            border-primary 
+                           dark:border-dark_primary
+                         dark:text-dark_primary
                            outline-none
                            " value="Easy">Easy</option>
             <option class="block
@@ -52,6 +58,8 @@ const filterBar = function () {
                          bg-white 
                            text-primary 
                            border-primary 
+                           dark:border-dark_primary
+                         dark:text-dark_primary
                            outline-none
                            " value="Middle">Middle</option>
             <option class="block
@@ -60,11 +68,13 @@ const filterBar = function () {
                            py-2
                          bg-white 
                            text-primary 
-                           border-primary 
+                           border-primary
+                           dark:border-dark_primary
+                         dark:text-dark_primary 
                            outline-none
                            " value="Hard">Hard</option>
           </select>
-          <div class="absolute text-primary right-3">
+          <div class="absolute text-primary right-3 dark:text-dark_primary">
             <i class="fa-solid fa-caret-down"></i>
           </div>
         </div>
@@ -85,7 +95,8 @@ const filterBar = function () {
                         border-gray-300 
                         border-[2px]
                       focus:border-primary
-
+                      dark:border-dark_primary_light
+                      dark:focus:border-dark_primary
                         "
                   placeholder="Search ...">
           <button   id="btn-search"
@@ -99,6 +110,8 @@ const filterBar = function () {
                          bg-primary
                          text-white
                          hover:bg-[#76c2f8]
+                         dark:bg-dark_primary
+                         dark:hover:bg-dark_primary_light
                          group">
             <i class="fa-solid fa-magnifying-glass
                        "></i>

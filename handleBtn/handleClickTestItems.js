@@ -13,14 +13,13 @@ import setHandleLogoutBtn from "./setHandleLogoutBtn.js";
 async function handleTestItemClick(id, listTestPageEl, root) {
   const currentTest = await getTestById(id);
 
-  const loaderEl = renderLoader(root)
+  const loaderEl = renderLoader(root);
 
   const infoTestPageEl = await infoTestPage(currentTest);
 
   setTimeout(async () => {
-    await unmount(loaderEl, root)
-  }, 1000)
-
+    await unmount(loaderEl, root);
+  }, 1000);
 
   render(infoTestPageEl, root);
 
@@ -50,13 +49,19 @@ async function handleTestItemClick(id, listTestPageEl, root) {
     await handleBtnStartTest(currentTest, infoTestPageEl, root);
   };
 
-  btnBack.onclick = async function() {
-    await handleBackTestInfoToListTest(infoTestPageEl, root)
-  }
+  btnBack.onclick = async function () {
+    await handleBackTestInfoToListTest(infoTestPageEl, root);
+  };
 
   setHandleBtnDarkMode();
 
   setHandleLogoutBtn(root);
+
+  const logo = document.getElementById("logo");
+  logo.onclick = async function(){
+    console.log("call");
+    await handleBackTestInfoToListTest(infoTestPageEl, root)
+  }
 
   await unmount(listTestPageEl, root);
 }
@@ -68,8 +73,6 @@ const handleClickTestItems = function (listTestPageEl, root) {
       await handleTestItemClick(testItem.id, listTestPageEl, root);
     };
   }
-
-
 };
 
 export default handleClickTestItems;

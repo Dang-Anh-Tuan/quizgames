@@ -9,16 +9,18 @@ const infoTextRow = function (label, value, isImportant = false) {
       <p class="text-[1.2rem] 
                 leading-[1.6rem] 
                 text-primary 
-                font-semibold">
+                font-semibold
+                dark:text-dark_primary">
       ${label}: </p>
       <p class="text-[1.2rem] 
                 leading-[1.6rem]   
                 ml-2 
                 truncate 
+                
                 ${
                   isImportant
                     ? "text-red-400 font-semibold"
-                    : "text-gray-800 font-normal"
+                    : "text-gray-800 font-normal dark:text-white"
                 }">
       ${value}</p>
   `;

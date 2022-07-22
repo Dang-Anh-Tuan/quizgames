@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,12 +28,14 @@
 }
     </style>
   </head>
-  <body>
+  <body class="dark:bg-dark_bg">
     <header class="h-[68px] 
                    bg-primary-nav
                    fixed
                    w-full
-                   z-[10000]">
+                   z-[10000]
+                   dark:bg-dark-primary-nav
+                   ">
       <div
         class="flex 
               justify-center
@@ -59,7 +61,8 @@
                      text-[1.6rem]
                      font-semibold
                      text-white
-                     tracking-">QUIZGAMEs</h3>
+                     tracking
+                     select-none">QUIZGAMEs</h3>
         </div>
         <div class="flex
         items-center
@@ -92,6 +95,7 @@
                       after:bg-transparent
                       after:top-[-20px]
                       after:left-0
+                      dark:bg-dark-white
                       ">
             <div class="flex
                         items-center
@@ -99,7 +103,9 @@
                         py-3 
                         border-b-[1px] 
                         text-[1.1rem] 
-                        hover:text-primary">
+                        hover:text-primary
+                        dark:hover:text-dark_primary
+                        ">
                       <p>Dark mode</p>
                       <div class="  flex
                                     items-center
@@ -132,6 +138,7 @@
                            py-3
                            text-[1.1rem] 
                            hover:text-primary 
+                           dark:hover:text-dark_primary
                            w-full text-left">Log out</button>
           </div>
         </div>
@@ -161,8 +168,10 @@
                                        rounded-[5px]
                                        outline-none
                                        text-primary
-                                       border
+                                       border-[2px]
                                        border-[#2e9ce9]
+                                       dark:border-dark_primary
+                                       dark:text-dark_primary
                                        " >
             <option class="block
                            pr-8
@@ -171,6 +180,8 @@
                          bg-white 
                            text-primary 
                            border-primary 
+                         dark:border-dark_primary
+                         dark:text-dark_primary
                             outline-none
             "value="None" selected>None</option>
             <option class="block
@@ -181,6 +192,8 @@
                            text-primary 
                            border-primary 
                            outline-none
+                           dark:border-dark_primary
+                         dark:text-dark_primary
                            " value="Easy">Easy</option>
             <option class="block
                            pr-8
@@ -190,6 +203,8 @@
                            text-primary 
                            border-primary 
                            outline-none
+                           dark:border-dark_primary
+                         dark:text-dark_primary
                            " value="Middle">Middle</option>
             <option class="block
                            pr-8
@@ -199,9 +214,11 @@
                            text-primary 
                            border-primary 
                            outline-none
+                           dark:border-dark_primary
+                         dark:text-dark_primary
                            " value="Hard">Hard</option>
           </select>
-          <div class="absolute text-primary right-3">
+          <div class="absolute text-primary right-3 dark:text-dark_primary">
             <i class="fa-solid fa-caret-down"></i>
           </div>
         </div>
@@ -220,7 +237,8 @@
                         border-gray-300 
                         border-[2px]
                       focus:border-primary
-
+                      dark:border-dark_primary_light
+                        dark:focus:border-dark_primary
                         "
                   placeholder="Search ...">
           <button class="flex
@@ -233,6 +251,8 @@
                          bg-primary
                          text-white
                          hover:bg-[#76c2f8]
+                         dark:bg-dark_primary
+                         dark:hover:bg-dark_primary_light
                          group">
             <i class="fa-solid fa-magnifying-glass
                        "></i>

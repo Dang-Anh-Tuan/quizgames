@@ -18,10 +18,10 @@ const testInfoRankRow = function (imageUrl, ranking) {
               <p class="select-none 
                         text-[1.2rem] 
                         font-semibold
-                        ml-4">${ranking.email}</p>
+                        ml-4 dark:text-white">${ranking.email}</p>
             </div>
             <div>
-              <p class="select-none font-semibold">${ranking.score}</p>
+              <p class="select-none font-semibold dark:text-white">${ranking.score}</p>
             </div>
   `;
 

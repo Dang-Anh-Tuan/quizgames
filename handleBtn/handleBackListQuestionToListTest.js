@@ -15,10 +15,7 @@ const handleBackListQuestionToListTest = async function (
 
   const loaderEl = renderLoader(root);
 
-  setTimeout(async () => {
-    await unmount(loaderEl, root)
-  }, 1000)
-
+ 
 
   if (!listQuestionPageEl) {
     root.innerHTML = "";

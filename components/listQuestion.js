@@ -13,6 +13,7 @@ const listQuestion = function (listQuestion) {
     "bg-white",
     "bg-opacity-90",
     "min-h-[100vh]",
+    "dark:bg-dark-white-blur"
   );
 
   listQuestion.forEach((q, index) => {

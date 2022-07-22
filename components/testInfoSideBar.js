@@ -18,7 +18,8 @@ const testInfoSideBar = async function (currentTest) {
     "mr-3",
     "ml-3",
     "mt-9",
-    "lg:mt-0"
+    "lg:mt-0",
+    "dark:bg-dark-white-blur"
   );
 
   testInfoSideBarEl.innerHTML = `
@@ -34,6 +35,7 @@ const testInfoSideBar = async function (currentTest) {
                     text-white
                     font-semibold
                     rounded-full
+                    dark:bg-dark_primary
                     " >
               <div  id="info-test__btn-comment"
                     class="w-[50%]

@@ -13,7 +13,8 @@ const infoAnswerHeading = function () {
     "text-white",
     "font-semibold",
     "rounded-tl-[25px]",
-    "rounded-tr-[25px]"
+    "rounded-tr-[25px]",
+    "dark:bg-dark-gradient"
   );
 
   infoAnswerHeadingEl.textContent = "Information";

@@ -28,16 +28,16 @@ const testInfoComment = function (comment) {
   const dateFormate = `${hour}:${minute} ${day} ${month} ${year}`;
 
   testInfoCommentEl.innerHTML = `
-    <div class="comment-item bg-gray-200 py-2 px-6 rounded-[25px] mb-4 w-fit">
+    <div class="comment-item bg-gray-200 py-2 px-6 rounded-[25px] mb-4 w-fit dark:bg-dark-white-light">
              <div class="flex justify-between items-center min-w-[200px]"> 
-                <p class="select-none font-semibold text-[1.1rem]">
+                <p class="select-none font-semibold text-[1.1rem] dark:text-white">
                   ${comment.email}
                 </p>
-                <span class="ml-3 text-[0.9rem] text-gray-500 font-thin italic">
+                <span class="ml-3 text-[0.9rem] text-gray-500 font-thin italic dark:text-white">
                   ${dateFormate}
                 </span>
               </div>
-            <p class="leading-[1.4rem]">${comment.content}</p>
+            <p class="leading-[1.4rem] dark:text-white">${comment.content}</p>
           </div>
   `;
 

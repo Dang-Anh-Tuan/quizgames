@@ -5,7 +5,8 @@ const disableAllInputAnswer = function () {
     inputAnswer.disabled = true;
     inputAnswer.nextElementSibling.classList.remove(
       "hover:border-[#b4e0ff]",
-      "cursor-pointer"
+      "cursor-pointer",
+      "dark:hover:border-[#f49548]"
     );
   });
 };

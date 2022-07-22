@@ -39,7 +39,8 @@ const popUpScore = function (scoreUser, scoreOfTest, scorePass) {
                   translate-y-[-50%]
                   rounded-[25px]
                   px-6
-                  py-10" >
+                  py-10
+                  dark:bg-dark-white-blur" >
           <img src="${imgSrc}" 
                alt="" 
                class="w-[100px]
@@ -49,12 +50,14 @@ const popUpScore = function (scoreUser, scoreOfTest, scorePass) {
                       leading[1.4rem] 
                       font-medium 
                       text-primary 
-                      select-none">${message} </p>
+                      select-none
+                      dark:text-dark_primary">${message} </p>
             <p class="text-[1.2rem] 
                       leading[1.4rem] 
                       font-medium 
                       text-primary
-                      select-none">You get ${scoreUser} / ${scoreOfTest} points </p>
+                      select-none
+                      dark:text-dark_primary">You get ${scoreUser} / ${scoreOfTest} points </p>
           </div>
           <div class="flex w-full justify-between mt-6">
             <button id="popup-result__back-list-test"
@@ -86,7 +89,8 @@ const popUpScore = function (scoreUser, scoreOfTest, scorePass) {
                             after:opacity-0
                             hover:after:scale-x-100
                             hover:after:opacity-100
-                            noSelect"  >Back to list test</button>
+                            noSelect
+                            dark:bg-dark-gradient"  >Back to list test</button>
             <button id="popup-result__btn-close"
                     class="outline-none
                           relative
@@ -107,7 +111,11 @@ const popUpScore = function (scoreUser, scoreOfTest, scorePass) {
                           transition-all
                           duration-300
                           ease-in-out
-                          noSelect" 
+                          noSelect
+                          dark:border-dark_primary
+                          dark:text-dark_primary
+                          dark:hover:bg-dark-gradient
+                          dark:hover:text-white" 
                       >Close</button>
           </div>
       </div>

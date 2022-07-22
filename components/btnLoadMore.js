@@ -39,6 +39,7 @@ const btnLoadMore = function () {
                       after:origin-center
                       hover:after:scale-x-100
                       hover:after:opacity-100
+                      dark:bg-dark-gradient
                       " >Load More</button>
   `;
 

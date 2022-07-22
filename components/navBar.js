@@ -8,7 +8,8 @@ const navBar = function () {
                    bg-primary-nav
                    fixed
                    w-full
-                   z-[10000]">
+                   z-[10000]
+                   dark:bg-dark-primary-nav">
       <div
         class="flex 
               justify-center
@@ -35,7 +36,8 @@ const navBar = function () {
                      text-[1.6rem]
                      font-semibold
                      text-white
-                     tracking-">QUIZGAMEs</h3>
+                     tracking
+                     select-none">QUIZGAMEs</h3>
         </div>
         <div class="relative cursor-pointer group xl:w-fit w-full text-center">
           <div class="flex items-center justify-center">
@@ -64,6 +66,7 @@ const navBar = function () {
                       after:bg-transparent
                       after:top-[-20px]
                       after:left-0
+                      dark:bg-dark-white
                       ">
             <div  id="btn-dark-mode"
             
@@ -73,7 +76,8 @@ const navBar = function () {
                         py-3 
                         border-b-[1px] 
                         text-[1.1rem] 
-                        hover:text-primary">
+                        hover:text-primary
+                        dark:hover:text-dark_primary">
                       <p>Dark mode</p>
                       <div class="  flex
                                     items-center
@@ -106,6 +110,7 @@ const navBar = function () {
                            py-3
                            text-[1.1rem] 
                            hover:text-primary 
+                           dark:hover:text-dark_primary
                            w-full text-left">Log out</button>
           </div>
         </div>

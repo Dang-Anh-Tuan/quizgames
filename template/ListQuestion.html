@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="../style/output.css" />
   </head>
-  <body>
+  <body class="dark:bg-dark_bg">
     <div class="relative
                 max-w-[1200px]
                 min-h-[100vh]
@@ -39,6 +39,7 @@
                   min-h-[100vh]
                   shadow-2xl
                   rounded-[25px]
+                  dark:bg-dark-white-blur
                   ">
         <div class="mb-8">
           <div class="px-6
@@ -89,6 +90,9 @@
                                       border-transparent
                                       hover:border-[#b4e0ff]
                                       peer-checked:border-[#b4e0ff]
+                                      dark:hover:border-[#f49548]
+                                      dark:peer-checked:border-[#f49548]
+                                      dark:peer-checked:bg-dark-gradient-reverse
                                       " 
                 >73</label>
               </div>
@@ -166,7 +170,8 @@
                       select-none 
                       leading-[1.4rem]
                       text-gray-700
-                      font-semibold" >
+                      font-semibold
+                      dark:text-dark_primary" >
                       Câu 1 : Bà đó bả chết bả bay lên trời. Hỏi bà ấy chết năm bao nhiêu tuổi và tại sao bà ấy chết?
             </p>
             <img src="../static/images/tick.png" class=" absolute
@@ -312,14 +317,17 @@
                     font-semibold
                     rounded-tl-[25px]
                     rounded-tr-[25px]
+                    dark:bg-dark-gradient
                     " >
                   Information
         </div>
         <div class="px-8">        
           <div class="flex
                       mb-6" >
-            <p class="text-[1.2rem] leading-[1.6rem] text-primary font-semibold">Name: </p>
-            <p class="text-[1.2rem] leading-[1.6rem] text-gray-800 font-normal ml-2 truncate">Dang Anh Tuan</p>
+            <p class="text-[1.2rem] leading-[1.6rem] text-primary font-semibold
+                      dark:text-dark_primary">Name: </p>
+            <p class="text-[1.2rem] leading-[1.6rem] text-gray-800 font-normal ml-2 truncate
+                      dark:text-white">Dang Anh Tuan</p>
           </div>
           <div class="flex
                       mb-6" >

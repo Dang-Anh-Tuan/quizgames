@@ -20,7 +20,8 @@ const infoAnswer = function (test, handleSubmit) {
     "pb-[50px]",
     "mb-[50px]",
     "mr-3",
-    "ml-3"
+    "ml-3",
+    "dark:bg-dark-white-blur"
   );
 
   infoAnswerEl.appendChild(infoAnswerHeading());

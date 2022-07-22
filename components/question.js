@@ -10,10 +10,10 @@ const question = function (question, index) {
                       select-none 
                       leading-[1.4rem]
                       text-gray-700
-                      font-semibold" >
+                      font-semibold dark:text-dark_primary" >
                       Question ${index + 1} : ${question.content}  - 
                       
-                      <span class='font-thin italic'>
+                      <span class='font-thin italic dark:text-dark_primary'>
                       ${question.score} score
                       </span>
 

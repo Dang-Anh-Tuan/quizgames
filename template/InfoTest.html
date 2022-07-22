@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="../style/output.css" />
   </head>
-  <body>
+  <body class="dark:bg-dark_bg">
     <div class="relative
                 max-w-[1200px]
                 min-h-[100vh]
@@ -40,12 +40,14 @@
                   rounded-[25px]
                   lg:mr-4
                   mt-[38px]
+                  dark:bg-dark-white-blur
                   ">
         <h3 class="text-center
                    text-[2rem] 
                    leading-[2.2rem] 
                    font-semibold 
-                   text-primary">
+                   text-primary
+                   dark:text-dark_primary">
                    HTML&CSS</h3>
         <div class="mt-[50px]">
           <div class="flex 
@@ -56,11 +58,12 @@
             <div class="flex 
                         justify-start 
                         w-[40px] 
-                        text-primary">
+                        text-primary
+                        dark:text-dark_primary">
               <i class="fa-regular fa-circle-question"></i>
             </div>
-            <p>Question : </p>
-            <p class="ml-4 font-normal">34</p>
+            <p class="dark:text-dark_primary">Question : </p>
+            <p class="ml-4 font-normal dark:text-dark_primary">34</p>
           </div>
 
            <div class="flex 
@@ -71,11 +74,12 @@
             <div class="flex 
                         justify-start 
                         w-[40px] 
-                        text-primary">
+                        text-primary
+                        dark:text-dark_primary">
               <i class="fa-regular fa-clock"></i>
             </div>
-            <p>Time : </p>
-            <p class="ml-4 font-normal">30 minutes</p>
+            <p class="dark:text-dark_primary">Time : </p>
+            <p class="ml-4 font-normal dark:text-dark_primary">30 minutes</p>
           </div>
 
            <div class="flex 
@@ -86,11 +90,12 @@
             <div class="flex 
                         justify-start 
                         w-[40px] 
-                        text-primary">
+                        text-primary
+                        dark:text-dark_primary">
               <i class="fa-regular fa-circle-check"></i>
             </div>
-            <p>Require score : </p>
-            <p class="ml-4 font-normal">30</p>
+            <p class="dark:text-dark_primary">Require score : </p>
+            <p class="ml-4 font-normal dark:text-dark_primary">30</p>
           </div>
 
           <p class="text-[1.2rem] leading-[2rem] text-gray-500 font-light">Lorem ipsum dolor sit, 
@@ -147,7 +152,8 @@
                             after:origin-center
                             after:opacity-0
                             hover:after:scale-x-100
-                            hover:after:opacity-100"  >Start</button>
+                            hover:after:opacity-100
+                            dark:bg-dark-gradient"  >Start</button>
             <button id="info-test__btn-back"
                     class="outline-none
                           relative
@@ -167,7 +173,11 @@
                           hover:text-white
                           transition-all
                           duration-300
-                          ease-in-out" 
+                          ease-in-out
+                          dark:border-dark_primary
+                          dark:text-dark_primary
+                          dark:hover:bg-dark-gradient
+                          dark:hover:text-white" 
                       >Back</button>
         </div>
       </div>
@@ -185,8 +195,8 @@
                   right-0
                   pb-[50px]
                   pb-[24px]
-
                   min-h-[280px]
+                  dark:bg-dark-white-blur
                  ">
         <div class="relative
                     flex
@@ -200,6 +210,7 @@
                     text-white
                     font-semibold
                     rounded-full
+                    dark:bg-dark_primary
                     " >
               <div  id="info-test__btn-comment"
                     class="w-[50%]
@@ -285,17 +296,21 @@
             hover:text-white
             transition-all
             duration-300
-            ease-in-out">Send</button>
+            ease-in-out
+          dark:border-dark_primary
+          dark:text-dark_primary
+            dark:hover:bg-dark-gradient
+          dark:hover:text-white">Send</button>
           </div>
           <div class="max-h-[400px] overflow-y-auto">
-            <div class="bg-gray-200 py-2 px-6 rounded-[25px] mb-4 w-fit">
+            <div class="bg-gray-200 py-2 px-6 rounded-[25px] mb-4 w-fit dark:bg-dark-white-light">
               <div class="flex justify-between items-center min-w-[200px]"> 
-                <p class="select-none font-semibold text-[1.1rem]">
+                <p class="select-none font-semibold text-[1.1rem] dark:text-white">
                   User 1
                 </p>
-                <span class="ml-3 text-[0.9rem] text-gray-500 font-thin italic"> 11:30 23th3</span>
+                <span class="ml-3 text-[0.9rem] text-gray-500 font-thin italic dark:text-white"> 11:30 23th3</span>
               </div>
-              <p class="leading-[1.4rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit.t! Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+              <p class="leading-[1.4rem] dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.t! Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
             </div>
             <div class="bg-gray-200 py-2 px-6 rounded-[25px] mb-4 w-fit">
               <div class="flex justify-between items-center min-w-[200px]"> 
@@ -368,10 +383,10 @@
               <p class="select-none 
                         text-[1.2rem] 
                         font-semibold
-                        ml-4">Tuan</p>
+                        ml-4 dark:text-white">Tuan</p>
             </div>
             <div>
-              <p class="select-none font-semibold">200</p>
+              <p class="select-none font-semibold dark:text-white">200</p>
             </div>
           </div>
           

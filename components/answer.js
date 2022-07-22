@@ -31,8 +31,12 @@ const answer = function (id, content, idQuestion, type) {
                                       peer-checked:bg-primary-nav
                                     peer-checked:text-white
                                     peer-checked:border-[#b4e0ff]
-                                    noSelect
-                                    
+                                      noSelect
+                                    dark:hover:border-[#f49548]
+                                      dark:peer-checked:border-[#f49548]
+                                      dark:peer-checked:bg-dark-gradient-reverse
+                                      dark:bg-dark-white-light
+                                      dark:text-white
                                       " 
                 >${content}</label>
               </div>

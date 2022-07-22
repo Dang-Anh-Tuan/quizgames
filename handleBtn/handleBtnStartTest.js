@@ -1,5 +1,6 @@
 import { render, unmount } from "../core/core.js";
 import listQuestionPage from "../pages/listQuestionPage.js";
+import handleBackListQuestionToListTest from "./handleBackListQuestionToListTest.js";
 import handleBtnQuitTest from "./handleBtnQuitTest.js";
 import handleSubmit from "./handleSubmit.js";
 import renderLoader from "./renderLoader.js";
@@ -35,6 +36,12 @@ const handleBtnStartTest = async function (currentTest, infoTestPageEl, root) {
   setHandleBtnDarkMode();
 
   setHandleLogoutBtn(root, idTimer);
+
+  const logo = document.getElementById("logo");
+  logo.onclick = async function () {
+    console.log("call");
+    await handleBackListQuestionToListTest(listQuestionPageEl, idTimer, root);
+  };
 };
 
 export default handleBtnStartTest;

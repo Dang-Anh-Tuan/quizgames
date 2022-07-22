@@ -15,6 +15,24 @@
   .bg-primary-nav {
     background: linear-gradient(110deg, #76c2f8 10%, #336ce1 100%);
   }
+  .bg-dark-gradient {
+    background: linear-gradient(110deg, #ff7200 10%, #f49548 100%);
+  }
+  .bg-dark-gradient-reverse {
+    background: linear-gradient(110deg, #f49548 10%, #ff7200 100%);
+  }
+  .bg-dark-primary-nav {
+    background: linear-gradient(110deg, #2f3036 10%, #2a2d3e 100%);
+  }
+  .bg-dark-white {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .bg-dark-white-light {
+    background-color: #707070;
+  }
+  .bg-dark-white-blur {
+    background-color: #2a2d3e;
+  }
   .bg-primary-loader {
     background: linear-gradient(110deg, #fff 10%, #336ce1 100%);
   }
