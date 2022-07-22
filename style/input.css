@@ -15,6 +15,9 @@
   .bg-primary-nav {
     background: linear-gradient(110deg, #76c2f8 10%, #336ce1 100%);
   }
+  .bg-primary-loader {
+    background: linear-gradient(110deg, #fff 10%, #336ce1 100%);
+  }
   .shadow-input-focus {
     box-shadow: 0px 0px 5px 2px #2e9ce9;
   }

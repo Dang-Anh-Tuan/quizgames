@@ -2,16 +2,23 @@ import { render, unmount } from "../core/core.js";
 import listQuestionPage from "../pages/listQuestionPage.js";
 import handleBtnQuitTest from "./handleBtnQuitTest.js";
 import handleSubmit from "./handleSubmit.js";
+import renderLoader from "./renderLoader.js";
 import setHandleBtnDarkMode from "./setHandleBtnDarkMode.js";
 import setHandleLogoutBtn from "./setHandleLogoutBtn.js";
 
 const handleBtnStartTest = async function (currentTest, infoTestPageEl, root) {
+  const loaderEl = renderLoader(root);
+
   const { listQuestionPageEl, idTimer } = listQuestionPage(
     currentTest,
     handleSubmit
   );
 
   await unmount(infoTestPageEl, root);
+
+  setTimeout(async () => {
+    await unmount(loaderEl, root);
+  }, 500);
 
   render(listQuestionPageEl, root);
 

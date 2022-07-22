@@ -12,10 +12,12 @@ const handleLoadMore = async function (
   listTestPageEl,
   root
 ) {
+
   const newDataTests = await getAllTests({
     page: currentPage,
   });
 
+ 
   if (newDataTests.length < AMOUNT_TEST_PER_PAGE) {
     disabledBtn(btnLoadMore);
   }

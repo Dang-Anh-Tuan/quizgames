@@ -6,13 +6,21 @@ import handleBtnStartTest from "./handleBtnStartTest.js";
 import handleClickCommentBtn from "./handleClickCommentBtn.js";
 import handleClickRankingBtn from "./handleClickRankingBtn.js";
 import handleSendComment from "./handleSendComment.js";
+import renderLoader from "./renderLoader.js";
 import setHandleBtnDarkMode from "./setHandleBtnDarkMode.js";
 import setHandleLogoutBtn from "./setHandleLogoutBtn.js";
 
 async function handleTestItemClick(id, listTestPageEl, root) {
   const currentTest = await getTestById(id);
 
+  const loaderEl = renderLoader(root)
+
   const infoTestPageEl = await infoTestPage(currentTest);
+
+  setTimeout(async () => {
+    await unmount(loaderEl, root)
+  }, 1000)
+
 
   render(infoTestPageEl, root);
 

@@ -3,6 +3,7 @@ import { render, unmount } from "../core/core.js";
 import listTestPage from "../pages/listTestPage.js";
 import disabledBtn from "../sideEffect/disabledBtn.js";
 import handleClickTestItems from "./handleClickTestItems.js";
+import renderLoader from "./renderLoader.js";
 import setHandleBtnDarkMode from "./setHandleBtnDarkMode.js";
 import setHandleBtnSearch from "./setHandleBtnSearch.js";
 import setHandleLogoHomePage from "./setHandleLogoHomePage.js";
@@ -27,8 +28,16 @@ const handleBtnSearch = async function (btnSearch, listTestPageEl, root) {
   });
 
   await unmount(listTestPageEl, root);
+
+  const loaderEl = renderLoader(root)
+
   const listTestPageElNew = await listTestPage(listTestData);
   render(listTestPageElNew, root);
+
+  setTimeout(async () => {
+    await unmount(loaderEl, root)
+  }, 500)
+
 
   handleClickTestItems(listTestPageElNew, root);
 
