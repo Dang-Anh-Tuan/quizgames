@@ -1,9 +1,16 @@
-const testItem = function(id, image, testName){
-  const testItemEl = document.createElement('div')
+const testItem = function ({id, thumb, name, level}) {
+  const testItemEl = document.createElement("div");
+
+  const colorTag = {
+    "Easy" : "#2ee94d",
+    "Middle" : "#2e9ce9",
+    "Hard" : "#ff7200"
+  }
 
   testItemEl.innerHTML = `
       <div id="${id}"
-           class="test-item
+           class="relative
+                  test-item
                   h-[300px] 
                   shadow-2xl 
                   rounded-[20px]
@@ -31,7 +38,7 @@ const testItem = function(id, image, testName){
                     after:group-hover:opacity-100
                     ">
           <img
-            src="${image}"
+            src="${thumb}"
             class="object-fit
                    w-full
                    h-[200px] 
@@ -48,12 +55,29 @@ const testItem = function(id, image, testName){
                      wrap-text
                      dark:text-white
                     ">
-            ${testName}
+            ${name}
           </h3>
         </div>
+        <div class="flex
+                    items-center
+                    justify-center
+                    text-white
+                    font-medium
+                    select-none
+                    absolute
+                    w-[60px]
+                    h-[44px]
+                    top-[0px]
+                    left-4
+                    z-[11]
+                    
+                    " data-color="${colorTag[level]}" style="background-color: ${colorTag[level]};">
+            ${level}
+        </div>
+        <div class="tag-level-after left-4" style="border-color:${colorTag[level]} transparent transparent transparent;">
       </div>
-  `
+  `;
   return testItemEl;
-}
+};
 
 export default testItem;

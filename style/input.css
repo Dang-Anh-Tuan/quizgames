@@ -45,4 +45,20 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
   }
+  .tag-level-after{
+    position: absolute;
+    border-width: 20px 30px;
+    top: 44px;
+    z-index: 11;
+  }
+
+  .tag-level-before::before{
+    position: absolute;
+    content: "";
+    border-width: 10px 10px;
+    border-color:  transparent transparent attr(data-color) transparent;
+    top: -10px;
+    left : -10px;
+
+  }
 }

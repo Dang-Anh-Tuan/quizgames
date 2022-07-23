@@ -26,7 +26,7 @@
     >
       <div
         id="${id}"
-        class="test-item h-[300px] shadow-2xl rounded-[20px] cursor-pointer group noSelect dark:bg-dark-white-blur"
+        class="relative test-item h-[300px] shadow-2xl rounded-[20px] cursor-pointer group noSelect dark:bg-dark-white-blur"
       >
         <div
           class="overflow-hidden relative w-full h-[200px] rounded-tl-[20px] rounded-tr-[20px] after:content-[''] after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-[rgba(255,255,255,0.2)] after:blur-md after:z-10 after:opacity-0 after:group-hover:opacity-100"
@@ -40,6 +40,22 @@
           <h3 class="leading-[1.4rem] font-[1.2rem] font-semibold wrap-text dark:text-white">
             ${testName}
           </h3>
+        </div>
+        <div class="flex
+                    items-center
+                    justify-center
+                    text-white
+                    font-medium
+                    select-none
+                    absolute
+                    w-[60px]
+                    h-[44px]
+                    top-[0px]
+                    left-4
+                    z-[11]
+                    tag-level-after
+                    " data-color="#ff7200" style="background-color: #ff7200;">
+            Hard
         </div>
       </div>
      

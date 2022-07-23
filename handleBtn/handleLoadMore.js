@@ -24,7 +24,7 @@ const handleLoadMore = async function (
 
   newDataTests &&
     newDataTests.forEach((item) => {
-      const testItemEl = testItem(item.id, item.thumb, item.name);
+      const testItemEl = testItem(item);
       containerListTest.append(testItemEl);
     });
 

@@ -22,7 +22,7 @@ const listTest = function (listTestData) {
   );
 
   listTestData.forEach((item) => {
-    const testItemEl = testItem(item.id, item.thumb, item.name);
+    const testItemEl = testItem(item);
     containerListTestEl.append(testItemEl);
   });
 
