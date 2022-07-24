@@ -13,7 +13,11 @@ const testInfoRanking = async function (testId) {
     "top-[100px]",
     "w-full",
     "opacity-0",
-    "z-[-1]"
+    "z-[-1]",
+    "z-10",
+    "transition-all",
+    "duration-200",
+    "ease-in-out"
   );
 
   topResultTest[0] &&

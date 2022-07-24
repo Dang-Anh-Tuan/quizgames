@@ -15,9 +15,11 @@ const testItem = function ({id, thumb, name, level}) {
                   shadow-2xl 
                   rounded-[20px]
                   cursor-pointer
+                  opacity-0
                   group
                   noSelect
                   dark:bg-dark-white-blur
+                  animate-[fadeUp_0.5s_ease-in-out_0.3s_forwards]
                   ">
         <div class="overflow-hidden 
                     relative

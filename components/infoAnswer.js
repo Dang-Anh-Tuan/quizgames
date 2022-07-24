@@ -31,7 +31,7 @@ const infoAnswer = function (test, handleSubmit) {
   containerContentInfo.classList.add("px-8");
   containerContentInfo.setAttribute('id', "container-info-answer");
 
-  containerContentInfo.appendChild(infoTextRow("Test name", test.name));
+  containerContentInfo.appendChild(infoTextRow("Require score", test.scorePass));
   containerContentInfo.appendChild(
     infoTextRow("Time", `${test.timeAnswerMinute} minutes`)
   );

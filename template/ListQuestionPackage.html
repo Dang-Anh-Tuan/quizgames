@@ -19,80 +19,62 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../style/output.css" />
+    <style>
+      .test-item {
+        animation: fadeUp 0.5s ease-in-out 0.5s forwards;
+      }
+      @keyframes fadeUp {
+        0% {
+          top: 20px;
+          opacity: 0;
+        }
+        100% {
+          top: 0;
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
   <body class="dark:bg-dark_bg">
     <div
-      class=" pb-[50px] pt-[150px] xl:pt-[50px] max-w-[1200px] m-auto grid gap-x-[35px] gap-y-5  px-[50px] grid-rows-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:px-0"
+      class="pb-[50px] pt-[150px] xl:pt-[50px] max-w-[1200px] m-auto grid gap-x-[35px] gap-y-5 px-[50px] grid-rows-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:px-0"
     >
       <div
         id="${id}"
-        class="relative test-item h-[300px] shadow-2xl rounded-[20px] cursor-pointer group noSelect dark:bg-dark-white-blur"
+        class="animate-[fadeUp_0.5s_ease-in-out_0.3s_forwards] relative test-item h-[300px] shadow-2xl rounded-[20px] cursor-pointer group noSelect dark:bg-dark-white-blur"
       >
         <div
-          class="overflow-hidden relative w-full h-[200px] rounded-tl-[20px] rounded-tr-[20px] after:content-[''] after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-[rgba(255,255,255,0.2)] after:blur-md after:z-10 after:opacity-0 after:group-hover:opacity-100"
+          class=" overflow-hidden relative w-full h-[200px] rounded-tl-[20px] rounded-tr-[20px] after:content-[''] after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-[rgba(255,255,255,0.2)] after:blur-md after:z-10 after:opacity-0 after:group-hover:opacity-100"
         >
           <img
             src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
-            class="object-fit w-full h-[200px] transition-all duration-300 group-hover:scale-125" alt=""
+            class="object-fit w-full h-[200px] transition-all duration-300 group-hover:scale-125"
+            alt=""
           />
         </div>
-        <div class="ml-4 mt-4 w-[80%] ">
-          <h3 class="leading-[1.4rem] font-[1.2rem] font-semibold wrap-text dark:text-white">
+        <div class="ml-4 mt-4 w-[80%]">
+          <h3
+            class="leading-[1.4rem] font-[1.2rem] font-semibold wrap-text dark:text-white"
+          >
             ${testName}
           </h3>
         </div>
-        <div class="flex
-                    items-center
-                    justify-center
-                    text-white
-                    font-medium
-                    select-none
-                    absolute
-                    w-[60px]
-                    h-[44px]
-                    top-[0px]
-                    left-4
-                    z-[11]
-                    tag-level-after
-                    " data-color="#ff7200" style="background-color: #ff7200;">
-            Hard
+        <div
+          class="flex items-center justify-center text-white font-medium select-none absolute w-[60px] h-[44px] top-[0px] left-4 z-[11] tag-level-after"
+          data-color="#ff7200"
+          style="background-color: #ff7200"
+        >
+          Hard
         </div>
       </div>
-     
-      
     </div>
-    <div class="flex w-full py-8 justify-center items-center mt-8" >
-      <button   id="list-test__btn-load"
-                class="outline-none
-                      relative
-                      text-center 
-                      min-w-[200px] 
-                      h-[48px] 
-                      px-4 
-                      bg-primary-color 
-                      m-auto rounded-full 
-                      text-white 
-                      text-[1.2rem] 
-                      transition-all 
-                      duration-300 
-                      ease-linear
-                      after:content-['']
-                      after:absolute
-                      after:top-0
-                      after:right-0
-                      after:w-full
-                      after:h-full
-                      after:bg-[rgba(255,255,255,0.3)]
-                      after:rounded-full
-                      after:scale-x-[0.2]
-                      after:opacity-0
-                      after:transition-all
-                      after:duration-300
-                      after:origin-center
-                      hover:after:scale-x-100
-                      hover:after:opacity-100
-                      dark:bg-dark-gradient
-                      " >Load More</button>
+    <div class="flex w-full py-8 justify-center items-center mt-8">
+      <button
+        id="list-test__btn-load"
+        class="outline-none relative text-center min-w-[200px] h-[48px] px-4 bg-primary-color m-auto rounded-full text-white text-[1.2rem] transition-all duration-300 ease-linear after:content-[''] after:absolute after:top-0 after:right-0 after:w-full after:h-full after:bg-[rgba(255,255,255,0.3)] after:rounded-full after:scale-x-[0.2] after:opacity-0 after:transition-all after:duration-300 after:origin-center hover:after:scale-x-100 hover:after:opacity-100 dark:bg-dark-gradient"
+      >
+        Load More
+      </button>
     </div>
   </body>
 </html>

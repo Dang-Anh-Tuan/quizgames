@@ -28,7 +28,7 @@ const handleClickBtnStart = async function (
 
     setTimeout(async () => {
       await unmount(loaderEl, root)
-    }, 1000)
+    }, 500)
 
     handleClickTestItems(listTestPageEl, root);
 

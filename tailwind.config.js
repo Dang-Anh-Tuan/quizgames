@@ -19,6 +19,12 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      keyframes: {
+        fadeUp: {
+          "0%": { top: "20px", opacity: "0" },
+          "100%": { top: "0px", opacity: "1" },
+        },
+      },
     },
   },
   plugins: [],

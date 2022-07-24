@@ -7,7 +7,13 @@ const testInfoComments = async function (testId) {
   const testInfoCommentsEl = document.createElement("div");
 
   testInfoCommentsEl.setAttribute("id", "container-comments");
-  testInfoCommentsEl.classList.add("px-4", "z-10");
+  testInfoCommentsEl.classList.add(
+    "px-4",
+    "z-10",
+    "transition-all",
+    "duration-200",
+    "ease-in-out"
+  );
 
   testInfoCommentsEl.innerHTML = `
     <div class="flex mb-4 gap-2 h-[36px]">
@@ -56,7 +62,7 @@ const testInfoComments = async function (testId) {
 
   const containerCommentsEl = document.createElement("div");
   containerCommentsEl.classList.add("max-h-[400px]", "overflow-y-auto");
-  containerCommentsEl.setAttribute('id', "test-info__container-comment")
+  containerCommentsEl.setAttribute("id", "test-info__container-comment");
 
   comments.forEach((comment) =>
     containerCommentsEl.appendChild(testInfoComment(comment))

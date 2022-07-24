@@ -8,6 +8,7 @@ import handleClickRankingBtn from "./handleClickRankingBtn.js";
 import handleSendComment from "./handleSendComment.js";
 import renderLoader from "./renderLoader.js";
 import setHandleBtnDarkMode from "./setHandleBtnDarkMode.js";
+import setHandleLogoInfo from "./setHandleLogoInfo.js";
 import setHandleLogoutBtn from "./setHandleLogoutBtn.js";
 
 async function handleTestItemClick(id, listTestPageEl, root) {
@@ -58,10 +59,11 @@ async function handleTestItemClick(id, listTestPageEl, root) {
   setHandleLogoutBtn(root);
 
   const logo = document.getElementById("logo");
-  logo.onclick = async function(){
-    console.log("call");
-    await handleBackTestInfoToListTest(infoTestPageEl, root)
-  }
+  logo.onclick = async function () {
+    await handleBackTestInfoToListTest(infoTestPageEl, root);
+  };
+
+  setHandleLogoInfo(infoTestPageEl, root);
 
   await unmount(listTestPageEl, root);
 }

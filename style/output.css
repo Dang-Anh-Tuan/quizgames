@@ -977,6 +977,69 @@ video {
           animation: spin 1s linear infinite;
 }
 
+@-webkit-keyframes fadeUp {
+  0% {
+    top: 20px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    top: 20px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.animate-\[fadeUp_0\.5s_ease-in-out_2\] {
+  -webkit-animation: fadeUp 0.5s ease-in-out 2;
+          animation: fadeUp 0.5s ease-in-out 2;
+}
+
+@keyframes fadeUp {
+  0% {
+    top: 20px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.animate-\[fadeUp_0\.5s_ease-in-out_0\.5s_forwards\] {
+  -webkit-animation: fadeUp 0.5s ease-in-out 0.5s forwards;
+          animation: fadeUp 0.5s ease-in-out 0.5s forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    top: 20px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.animate-\[fadeUp_0\.5s_ease-in-out_0\.3s_forwards\] {
+  -webkit-animation: fadeUp 0.5s ease-in-out 0.3s forwards;
+          animation: fadeUp 0.5s ease-in-out 0.3s forwards;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1450,6 +1513,12 @@ video {
 
 .transition-all {
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-opacity {
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }

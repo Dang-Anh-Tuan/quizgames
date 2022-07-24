@@ -1,10 +1,10 @@
 import { render, unmount } from "../core/core.js";
 import listQuestionPage from "../pages/listQuestionPage.js";
-import handleBackListQuestionToListTest from "./handleBackListQuestionToListTest.js";
 import handleBtnQuitTest from "./handleBtnQuitTest.js";
 import handleSubmit from "./handleSubmit.js";
 import renderLoader from "./renderLoader.js";
 import setHandleBtnDarkMode from "./setHandleBtnDarkMode.js";
+import setHandleLogoListQuestion from "./setHandleLogoListQuestion.js";
 import setHandleLogoutBtn from "./setHandleLogoutBtn.js";
 
 const handleBtnStartTest = async function (currentTest, infoTestPageEl, root) {
@@ -19,7 +19,7 @@ const handleBtnStartTest = async function (currentTest, infoTestPageEl, root) {
 
   setTimeout(async () => {
     await unmount(loaderEl, root);
-  }, 500);
+  }, 300);
 
   render(listQuestionPageEl, root);
 
@@ -37,11 +37,7 @@ const handleBtnStartTest = async function (currentTest, infoTestPageEl, root) {
 
   setHandleLogoutBtn(root, idTimer);
 
-  const logo = document.getElementById("logo");
-  logo.onclick = async function () {
-    console.log("call");
-    await handleBackListQuestionToListTest(listQuestionPageEl, idTimer, root);
-  };
+  setHandleLogoListQuestion(listQuestionPageEl, idTimer, root);
 };
 
 export default handleBtnStartTest;
