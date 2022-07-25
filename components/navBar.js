@@ -39,9 +39,9 @@ const navBar = function () {
                      tracking
                      select-none">QUIZGAMEs</h3>
         </div>
-        <div class="relative cursor-pointer group xl:w-fit w-full text-center">
+        <div class="relative cursor-pointer group xl:w-fit w-full text-center noSelect">
           <div class="flex items-center justify-center">
-            <p class=" text-white text-[1.2rem]">Hi, ${getCurrentName()}</p>
+            <p class=" text-white text-[1.2rem] select-none">Hi, ${getCurrentName()}</p>
             <div class=" text-white ml-2">
               <i class="fa-solid fa-caret-down"></i>
             </div>
@@ -77,7 +77,9 @@ const navBar = function () {
                         border-b-[1px] 
                         text-[1.1rem] 
                         hover:text-primary
-                        dark:hover:text-dark_primary">
+                        dark:hover:text-dark_primary
+                        select-none
+                        noSelect">
                       <p>Dark mode</p>
                       <div class="  flex
                                     items-center
@@ -111,7 +113,9 @@ const navBar = function () {
                            text-[1.1rem] 
                            hover:text-primary 
                            dark:hover:text-dark_primary
-                           w-full text-left">Log out</button>
+                           w-full text-left
+                           select-none
+                           noSelect">Log out</button>
           </div>
         </div>
   

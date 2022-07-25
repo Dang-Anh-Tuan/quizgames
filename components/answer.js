@@ -37,6 +37,7 @@ const answer = function (id, content, idQuestion, type) {
                                       dark:peer-checked:bg-dark-gradient-reverse
                                       dark:bg-dark-white-light
                                       dark:text-white
+                                      truncate
                                       " 
                 >${content}</label>
               </div>

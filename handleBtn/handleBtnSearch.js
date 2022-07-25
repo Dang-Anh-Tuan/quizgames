@@ -45,7 +45,7 @@ const handleBtnSearch = async function (btnSearch, listTestPageEl, root) {
 
   setHandleBtnSearch(listTestPageElNew, root);
 
-  setHandleLogoHomePage(listTestPageElNew, root);
+  // setHandleLogoHomePage(listTestPageElNew, root);
 
   setHandleBtnDarkMode();
 

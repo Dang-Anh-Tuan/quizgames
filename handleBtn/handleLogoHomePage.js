@@ -11,7 +11,7 @@ const handleLogoHomePage = async function (listTestPageEl, root) {
 
   setHandleBtnSearch(listTestPageNewEl, root);
 
-  setHandleLogoHomePage(listTestPageNewEl, root);
+  // setHandleLogoHomePage(listTestPageNewEl, root);
 
   await unmount(listTestPageEl, root);
 };

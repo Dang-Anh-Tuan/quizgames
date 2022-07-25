@@ -40,6 +40,7 @@ const btnLoadMore = function () {
                       hover:after:scale-x-100
                       hover:after:opacity-100
                       dark:bg-dark-gradient
+                      noSelect
                       " >Load More</button>
   `;
 

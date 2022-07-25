@@ -47,6 +47,7 @@ async function handleTestItemClick(id, listTestPageEl, root) {
   const btnBack = document.getElementById("info-test__btn-back");
 
   btnStartTest.onclick = async function () {
+    this.disabled = true;
     await handleBtnStartTest(currentTest, infoTestPageEl, root);
   };
 
@@ -73,6 +74,7 @@ const handleClickTestItems = function (listTestPageEl, root) {
   for (const testItem of testItems) {
     testItem.onclick = async function () {
       await handleTestItemClick(testItem.id, listTestPageEl, root);
+      this.disabled = true;
     };
   }
 };

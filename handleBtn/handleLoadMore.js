@@ -33,7 +33,7 @@ const handleLoadMore = async function (
 
   setHandleBtnDarkMode();
 
-  setHandleLogoHomePage(listTestPageEl, root);
+  // setHandleLogoHomePage(listTestPageEl, root);
 
 };
 

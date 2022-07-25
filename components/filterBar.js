@@ -112,7 +112,8 @@ const filterBar = function () {
                          hover:bg-[#76c2f8]
                          dark:bg-dark_primary
                          dark:hover:bg-dark_primary_light
-                         group">
+                         group
+                         noSelect">
             <i class="fa-solid fa-magnifying-glass
                        "></i>
           </button>

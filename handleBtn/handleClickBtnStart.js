@@ -34,7 +34,7 @@ const handleClickBtnStart = async function (
 
     setHandleBtnSearch(listTestPageEl, root);
 
-    setHandleLogoHomePage(listTestPageEl, root);
+    // setHandleLogoHomePage(listTestPageEl, root);
 
     setHandleBtnDarkMode();
 
