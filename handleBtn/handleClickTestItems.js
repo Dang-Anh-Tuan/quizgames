@@ -47,7 +47,7 @@ async function handleTestItemClick(id, listTestPageEl, root) {
   const btnBack = document.getElementById("info-test__btn-back");
 
   btnStartTest.onclick = async function () {
-    this.disabled = true;
+    btnStartTest.disabled = true;
     await handleBtnStartTest(currentTest, infoTestPageEl, root);
   };
 

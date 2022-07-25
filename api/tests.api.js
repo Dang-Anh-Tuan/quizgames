@@ -1,4 +1,4 @@
-import { ENTRYPOINT, REQUEST_OPTION } from "../constant/api.js";
+import { ENTRYPOINT } from "../constant/api.js";
 import { AMOUNT_TEST_PER_PAGE } from "../constant/pagination.js";
 
 export const getAllTests = async function (options = null) {

@@ -26,7 +26,14 @@ async function initialApp(root) {
   };
 
   btnStart.onclick = async function () {
-    this.disabled = true;
+    btnStart.disabled = true;
+
+    setTimeout(function () {
+      if (btnStart) {
+        console.log("call");
+        btnStart.disabled = false;
+      }
+    }, 200);
 
     validateName(inputNameEl, regexName, errorName);
     validateEmail(inputEmailEl, regexEmail, errorEmail);
@@ -37,7 +44,6 @@ async function initialApp(root) {
       loginPageEL,
       root
     );
-
   };
 }
 

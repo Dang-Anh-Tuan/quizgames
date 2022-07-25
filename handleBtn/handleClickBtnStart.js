@@ -16,12 +16,11 @@ const handleClickBtnStart = async function (
   loginPageEL,
   root
 ) {
-  const loaderEl = renderLoader(root)
-
-
   const newUser = await saveUser(inputName, inputEmail);
 
   if (newUser) {
+  const loaderEl = renderLoader(root)
+
     localStorage.setItem("currentUser", JSON.stringify(newUser));
 
     const listTestPageEl = await renderListTestPage(root);
